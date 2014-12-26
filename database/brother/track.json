@@ -1,0 +1,10 @@
+{
+     "interfaceType": "POST",
+     "requiredParameters": [],
+     "responseParameters": [],
+     "reqError": [],
+     "docError": [],
+     "interfaceUrl": "/brother/track.json",
+     "interfaceName": "师兄跟进师弟",
+     "lazyLoad": "no"
+}

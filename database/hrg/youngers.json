@@ -1,0 +1,219 @@
+{
+     "interfaceType": "GET",
+     "requiredParameters": [
+          {
+               "name": "keywords",
+               "required": true,
+               "remark": "搜索关键字",
+               "nameVerify": "name_1419500614000",
+               "ruleVerify": "rule_1419500614000"
+          },
+          {
+               "name": "start",
+               "required": true,
+               "remark": "起始数据",
+               "nameVerify": "name_1419500637000",
+               "ruleVerify": "rule_1419500637000"
+          },
+          {
+               "name": "limit",
+               "required": true,
+               "remark": "数据数目",
+               "nameVerify": "name_1419500650000",
+               "ruleVerify": "rule_1419500650000"
+          },
+          {
+               "name": "sort",
+               "required": true,
+               "remark": "排序列",
+               "nameVerify": "name_1419500680000",
+               "ruleVerify": "rule_1419500680000"
+          },
+          {
+               "name": "asc",
+               "required": true,
+               "remark": "正序（是、否）",
+               "nameVerify": "name_1419500701000",
+               "ruleVerify": "rule_1419500701000"
+          },
+          {
+               "name": "status",
+               "required": true,
+               "remark": "师弟状态（）",
+               "nameVerify": "name_1419501093000",
+               "ruleVerify": "rule_1419501093000"
+          }
+     ],
+     "responseParameters": [
+          {
+               "id": "01",
+               "kind": "string",
+               "name": "comfirm_number",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1419500942000",
+               "ruleVerify": "rule_1419500942000",
+               "remark": "确定来的人数"
+          },
+          {
+               "id": "02",
+               "kind": "string",
+               "name": "hesitate_number",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1419500967000",
+               "ruleVerify": "rule_1419500967000",
+               "remark": "犹豫中的人数"
+          },
+          {
+               "id": "03",
+               "kind": "string",
+               "name": "abandon_number",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1419501150000",
+               "ruleVerify": "rule_1419501150000",
+               "remark": "确定不来的人数"
+          },
+          {
+               "id": "04",
+               "kind": "string",
+               "name": "untrack_number",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1419501165000",
+               "ruleVerify": "rule_1419501165000",
+               "remark": "从未跟进的人数"
+          },
+          {
+               "id": "05",
+               "kind": "string",
+               "name": "untrack_1w_number",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1419501213000",
+               "ruleVerify": "rule_1419501213000",
+               "remark": "一周未跟进的人数"
+          },
+          {
+               "id": "06",
+               "kind": "string",
+               "name": "normal_number",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1419501233000",
+               "ruleVerify": "rule_1419501233000",
+               "remark": "正常跟进的人数"
+          },
+          {
+               "id": "07",
+               "kind": "array(object)",
+               "name": "youngers",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1419501256000",
+               "ruleVerify": "rule_1419501256000"
+          },
+          {
+               "id": "0701",
+               "kind": "string",
+               "name": "name",
+               "rule": "--",
+               "array": [
+                    "07"
+               ],
+               "nameVerify": "name_1419501268000",
+               "ruleVerify": "rule_1419501268000",
+               "remark": "师弟姓名"
+          },
+          {
+               "id": "0702",
+               "kind": "string",
+               "name": "bother_name",
+               "rule": "--",
+               "array": [
+                    "07"
+               ],
+               "nameVerify": "name_1419501306000",
+               "ruleVerify": "rule_1419501306000",
+               "remark": "师兄姓名"
+          },
+          {
+               "id": "0703",
+               "kind": "string",
+               "name": "comm_date",
+               "rule": "--",
+               "array": [
+                    "07"
+               ],
+               "nameVerify": "name_1419501320000",
+               "ruleVerify": "rule_1419501320000",
+               "remark": "沟通日期"
+          },
+          {
+               "id": "0704",
+               "kind": "string",
+               "name": "comm_type",
+               "rule": "--",
+               "array": [
+                    "07"
+               ],
+               "nameVerify": "name_1419501334000",
+               "ruleVerify": "rule_1419501334000",
+               "remark": "沟通方式"
+          },
+          {
+               "id": "0705",
+               "kind": "string",
+               "name": "status",
+               "rule": "--",
+               "array": [
+                    "07"
+               ],
+               "nameVerify": "name_1419501350000",
+               "ruleVerify": "rule_1419501350000",
+               "remark": "师弟状态(无需HR跟进、需HR跟进）"
+          },
+          {
+               "id": "0706",
+               "kind": "string",
+               "name": "comm_result",
+               "rule": "--",
+               "array": [
+                    "07"
+               ],
+               "nameVerify": "name_1419501368000",
+               "ruleVerify": "rule_1419501368000",
+               "remark": "沟通结果(确定不来、犹豫中、确定来）"
+          },
+          {
+               "id": "0707",
+               "kind": "string",
+               "name": "reason",
+               "rule": "--",
+               "array": [
+                    "07"
+               ],
+               "nameVerify": "name_1419501561000",
+               "ruleVerify": "rule_1419501561000",
+               "remark": "原因分类"
+          },
+          {
+               "id": "0708",
+               "kind": "string",
+               "name": "hr_track_result",
+               "rule": "--",
+               "array": [
+                    "07"
+               ],
+               "nameVerify": "name_1419501599000",
+               "ruleVerify": "rule_1419501599000",
+               "remark": "hr跟进结果(无需跟进、已跟进）"
+          }
+     ],
+     "reqError": [],
+     "docError": [],
+     "interfaceUrl": "/hrg/youngers.json",
+     "interfaceName": "hrg列出师弟列表",
+     "lazyLoad": "no"
+}

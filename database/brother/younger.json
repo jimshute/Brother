@@ -1,0 +1,181 @@
+{
+     "interfaceType": "GET",
+     "requiredParameters": [],
+     "responseParameters": [
+          {
+               "id": "05",
+               "kind": "array(object)",
+               "name": "--",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1419498740000",
+               "ruleVerify": "rule_1419498740000"
+          },
+          {
+               "id": "0501",
+               "kind": "string",
+               "name": "name",
+               "rule": "--",
+               "array": [
+                    "05"
+               ],
+               "nameVerify": "name_1419498745000",
+               "ruleVerify": "rule_1419498745000",
+               "remark": "师弟姓名"
+          },
+          {
+               "id": "0502",
+               "kind": "string",
+               "name": "avatar",
+               "rule": "--",
+               "array": [
+                    "05"
+               ],
+               "nameVerify": "name_1419498770000",
+               "ruleVerify": "rule_1419498770000",
+               "remark": "师弟头像"
+          },
+          {
+               "id": "0503",
+               "kind": "string",
+               "name": "phone",
+               "rule": "--",
+               "array": [
+                    "05"
+               ],
+               "nameVerify": "name_1419498775000",
+               "ruleVerify": "rule_1419498775000",
+               "remark": "师弟电话"
+          },
+          {
+               "id": "0504",
+               "kind": "string",
+               "name": "mail",
+               "rule": "--",
+               "array": [
+                    "05"
+               ],
+               "nameVerify": "name_1419498781000",
+               "ruleVerify": "rule_1419498781000",
+               "remark": "师弟邮箱"
+          },
+          {
+               "id": "0505",
+               "kind": "string",
+               "name": "status",
+               "rule": "--",
+               "array": [
+                    "05"
+               ],
+               "nameVerify": "name_1419498824000",
+               "ruleVerify": "rule_1419498824000",
+               "remark": "跟进状态(超时未沟通、从未跟进、正常)"
+          },
+          {
+               "id": "0506",
+               "kind": "string",
+               "name": "education",
+               "rule": "--",
+               "array": [
+                    "05"
+               ],
+               "nameVerify": "name_1419498909000",
+               "ruleVerify": "rule_1419498909000",
+               "remark": "教育"
+          },
+          {
+               "id": "0507",
+               "kind": "array(object)",
+               "name": "track_history",
+               "rule": "--",
+               "array": [
+                    "05"
+               ],
+               "nameVerify": "name_1419498947000",
+               "ruleVerify": "rule_1419498947000"
+          },
+          {
+               "id": "050701",
+               "kind": "string",
+               "name": "date",
+               "rule": "--",
+               "array": [
+                    "0507",
+                    "05"
+               ],
+               "nameVerify": "name_1419498982000",
+               "ruleVerify": "rule_1419498982000",
+               "remark": "记录日期"
+          },
+          {
+               "id": "050702",
+               "kind": "string",
+               "name": "track_status",
+               "rule": "--",
+               "array": [
+                    "0507",
+                    "05"
+               ],
+               "nameVerify": "name_1419499006000",
+               "ruleVerify": "rule_1419499006000",
+               "remark": "历史状态(确定来、犹豫中、确定不来)"
+          },
+          {
+               "id": "050703",
+               "kind": "string",
+               "name": "comm_log",
+               "rule": "--",
+               "array": [
+                    "0507",
+                    "05"
+               ],
+               "nameVerify": "name_1419499055000",
+               "ruleVerify": "rule_1419499055000",
+               "remark": "沟通记录"
+          },
+          {
+               "id": "050704",
+               "kind": "string",
+               "name": "comm_remark",
+               "rule": "--",
+               "array": [
+                    "0507",
+                    "05"
+               ],
+               "nameVerify": "name_1419499092000",
+               "ruleVerify": "rule_1419499092000",
+               "remark": "沟通备注"
+          },
+          {
+               "id": "050705",
+               "kind": "string",
+               "name": "hesitate_reason",
+               "rule": "--",
+               "array": [
+                    "0507",
+                    "05"
+               ],
+               "nameVerify": "name_1419499146000",
+               "ruleVerify": "rule_1419499146000",
+               "remark": "犹豫原因"
+          },
+          {
+               "id": "050706",
+               "kind": "string",
+               "name": "abandon_reason",
+               "rule": "--",
+               "array": [
+                    "0507",
+                    "05"
+               ],
+               "nameVerify": "name_1419499177000",
+               "ruleVerify": "rule_1419499177000",
+               "remark": "不来原因"
+          }
+     ],
+     "reqError": [],
+     "docError": [],
+     "interfaceUrl": "/brother/younger.json",
+     "interfaceName": "师兄列出师弟列表",
+     "lazyLoad": "no"
+}

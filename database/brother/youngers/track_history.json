@@ -1,0 +1,117 @@
+{
+     "interfaceType": "GET",
+     "requiredParameters": [
+          {
+               "name": "younger_id",
+               "required": true,
+               "remark": "师弟的Id",
+               "nameVerify": "name_1419499529000",
+               "ruleVerify": "rule_1419499529000"
+          },
+          {
+               "name": "limit",
+               "required": true,
+               "remark": "查询记录条数",
+               "nameVerify": "name_1419499544000",
+               "ruleVerify": "rule_1419499544000"
+          }
+     ],
+     "responseParameters": [
+          {
+               "id": "01",
+               "kind": "array(object)",
+               "name": "histories",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1419499582000",
+               "ruleVerify": "rule_1419499582000"
+          },
+          {
+               "id": "0101",
+               "kind": "string",
+               "name": "date",
+               "rule": "--",
+               "array": [
+                    "01"
+               ],
+               "nameVerify": "name_1419499634000",
+               "ruleVerify": "rule_1419499634000",
+               "remark": "跟进日期"
+          },
+          {
+               "id": "02",
+               "kind": "string",
+               "name": "name",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1419499653000",
+               "ruleVerify": "rule_1419499653000",
+               "remark": "师弟姓名"
+          },
+          {
+               "id": "0102",
+               "kind": "string",
+               "name": "history_status",
+               "rule": "--",
+               "array": [
+                    "01"
+               ],
+               "nameVerify": "name_1419499664000",
+               "ruleVerify": "rule_1419499664000",
+               "remark": "历史状态（确定来、犹豫中、确定不来）"
+          },
+          {
+               "id": "0103",
+               "kind": "string",
+               "name": "comm_log",
+               "rule": "--",
+               "array": [
+                    "01"
+               ],
+               "nameVerify": "name_1419499729000",
+               "ruleVerify": "rule_1419499729000",
+               "remark": "沟通记录"
+          },
+          {
+               "id": "0104",
+               "kind": "string",
+               "name": "comm_remark",
+               "rule": "--",
+               "array": [
+                    "01"
+               ],
+               "nameVerify": "name_1419499799000",
+               "ruleVerify": "rule_1419499799000",
+               "remark": "沟通备注"
+          },
+          {
+               "id": "0105",
+               "kind": "string",
+               "name": "hesitate_reason",
+               "rule": "--",
+               "array": [
+                    "01"
+               ],
+               "nameVerify": "name_1419499809000",
+               "ruleVerify": "rule_1419499809000",
+               "remark": "犹豫原因"
+          },
+          {
+               "id": "0106",
+               "kind": "string",
+               "name": "abandon_reason",
+               "rule": "--",
+               "array": [
+                    "01"
+               ],
+               "nameVerify": "name_1419499834000",
+               "ruleVerify": "rule_1419499834000",
+               "remark": "不来原因"
+          }
+     ],
+     "reqError": [],
+     "docError": [],
+     "interfaceUrl": "/brother/youngers/track_history.json",
+     "interfaceName": "师弟跟进记录",
+     "lazyLoad": "no"
+}

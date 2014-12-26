@@ -1,0 +1,38 @@
+{
+     "interfaceType": "GET",
+     "requiredParameters": [],
+     "responseParameters": [
+          {
+               "id": "01",
+               "kind": "string",
+               "name": "error",
+               "rule": "@boolean",
+               "array": [],
+               "nameVerify": "name_1419498161000",
+               "ruleVerify": "rule_1419498161000"
+          },
+          {
+               "id": "02",
+               "kind": "string",
+               "name": "msg",
+               "rule": "@word",
+               "array": [],
+               "nameVerify": "name_1419498190000",
+               "ruleVerify": "rule_1419498190000"
+          },
+          {
+               "id": "03",
+               "kind": "string",
+               "name": "status",
+               "rule": "@boolean",
+               "array": [],
+               "nameVerify": "name_1419498206000",
+               "ruleVerify": "rule_1419498206000"
+          }
+     ],
+     "reqError": [],
+     "docError": [],
+     "interfaceUrl": "/checkstatus.json",
+     "interfaceName": "检查用户登录状态",
+     "lazyLoad": "no"
+}

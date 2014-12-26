@@ -1,0 +1,10 @@
+{
+     "interfaceType": "GET",
+     "requiredParameters": [],
+     "responseParameters": [],
+     "reqError": [],
+     "docError": [],
+     "interfaceUrl": "/hrg/younger.json",
+     "interfaceName": "hrg查看师弟信息",
+     "lazyLoad": "no"
+}

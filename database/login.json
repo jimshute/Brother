@@ -1,0 +1,10 @@
+{
+     "interfaceType": "GET",
+     "requiredParameters": [],
+     "responseParameters": [],
+     "reqError": [],
+     "docError": [],
+     "interfaceUrl": "/login.json",
+     "interfaceName": "登录操作",
+     "lazyLoad": "no"
+}

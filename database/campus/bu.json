@@ -1,0 +1,10 @@
+{
+     "interfaceType": "GET",
+     "requiredParameters": [],
+     "responseParameters": [],
+     "reqError": [],
+     "docError": [],
+     "interfaceUrl": "/campus/bu.json",
+     "interfaceName": "校招团队列表BU列表",
+     "lazyLoad": "no"
+}
