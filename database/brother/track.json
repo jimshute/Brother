@@ -1,7 +1,64 @@
 {
      "interfaceType": "POST",
-     "requiredParameters": [],
-     "responseParameters": [],
+     "requiredParameters": [
+          {
+               "name": "communicate_date",
+               "required": true,
+               "remark": "沟通日期",
+               "nameVerify": "name_1419830996000",
+               "ruleVerify": "rule_1419830996000"
+          },
+          {
+               "name": "communicate_type",
+               "required": true,
+               "remark": "沟通方式",
+               "nameVerify": "name_1419831043000",
+               "ruleVerify": "rule_1419831043000"
+          },
+          {
+               "name": "status",
+               "required": true,
+               "remark": "师弟状态",
+               "nameVerify": "name_1419831071000",
+               "ruleVerify": "rule_1419831071000"
+          },
+          {
+               "name": "communicate_result",
+               "required": true,
+               "remark": "沟通结果",
+               "nameVerify": "name_1419831112000",
+               "ruleVerify": "rule_1419831112000"
+          },
+          {
+               "name": "communicate_record",
+               "required": true,
+               "remark": "沟通记录",
+               "nameVerify": "name_1419831146000",
+               "ruleVerify": "rule_1419831146000"
+          }
+     ],
+     "responseParameters": [
+          {
+               "id": "01",
+               "kind": "string",
+               "name": "error",
+               "rule": "@boolean",
+               "array": [],
+               "nameVerify": "name_1419837116000",
+               "ruleVerify": "rule_1419837116000",
+               "remark": "错误"
+          },
+          {
+               "id": "02",
+               "kind": "string",
+               "name": "message",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1419837131000",
+               "ruleVerify": "rule_1419837131000",
+               "remark": "错误、成功消息"
+          }
+     ],
      "reqError": [],
      "docError": [],
      "interfaceUrl": "/brother/track.json",

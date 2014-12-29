@@ -83,7 +83,7 @@
                "array": [],
                "nameVerify": "name_1419501165000",
                "ruleVerify": "rule_1419501165000",
-               "remark": "从未跟进的人数"
+               "remark": "从未跟进的人数（不要）"
           },
           {
                "id": "05",
@@ -93,7 +93,7 @@
                "array": [],
                "nameVerify": "name_1419501213000",
                "ruleVerify": "rule_1419501213000",
-               "remark": "一周未跟进的人数"
+               "remark": "一周未跟进的人数（不要）"
           },
           {
                "id": "06",
@@ -103,7 +103,7 @@
                "array": [],
                "nameVerify": "name_1419501233000",
                "ruleVerify": "rule_1419501233000",
-               "remark": "正常跟进的人数"
+               "remark": "正常跟进的人数（不要）"
           },
           {
                "id": "07",
@@ -117,7 +117,7 @@
           {
                "id": "0701",
                "kind": "string",
-               "name": "name",
+               "name": "student_name",
                "rule": "--",
                "array": [
                     "07"
@@ -129,7 +129,7 @@
           {
                "id": "0702",
                "kind": "string",
-               "name": "bother_name",
+               "name": "mentor_name",
                "rule": "--",
                "array": [
                     "07"
@@ -141,7 +141,7 @@
           {
                "id": "0703",
                "kind": "string",
-               "name": "comm_date",
+               "name": "communicate_date",
                "rule": "--",
                "array": [
                     "07"
@@ -153,7 +153,7 @@
           {
                "id": "0704",
                "kind": "string",
-               "name": "comm_type",
+               "name": "communicate_type",
                "rule": "--",
                "array": [
                     "07"
@@ -177,7 +177,7 @@
           {
                "id": "0706",
                "kind": "string",
-               "name": "comm_result",
+               "name": "communicate_result",
                "rule": "--",
                "array": [
                     "07"
@@ -189,7 +189,7 @@
           {
                "id": "0707",
                "kind": "string",
-               "name": "reason",
+               "name": "cause",
                "rule": "--",
                "array": [
                     "07"
@@ -209,6 +209,16 @@
                "nameVerify": "name_1419501599000",
                "ruleVerify": "rule_1419501599000",
                "remark": "hr跟进结果(无需跟进、已跟进）"
+          },
+          {
+               "id": "08",
+               "kind": "string",
+               "name": "count",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1419840198000",
+               "ruleVerify": "rule_1419840198000",
+               "remark": "总条目数"
           }
      ],
      "reqError": [

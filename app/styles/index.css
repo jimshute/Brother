@@ -110,6 +110,9 @@ li {
     clear: both;
 }
 
+
+/* 师兄管理样式 */
+
 #col-1, #col-2 {
     width: 50%;
     float: left;
@@ -262,19 +265,7 @@ li {
     background-size: 100% 100%
 }
 
-/*.time-line*/
-
-/*.track-history .time-line:before {*/
-    /*display: block;*/
-    /*position: relative;*/
-    /*width: 1px;*/
-    /*background-color: #CCC;*/
-    /*top: 0;*/
-    /*bottom: 0;*/
-    /*content: '';*/
-    /*float: left;*/
-    /*height: 90px;*/
-/*}*/
+/* 师兄管理--END */
 
 #footer {
 

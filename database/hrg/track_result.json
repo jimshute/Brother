@@ -1,0 +1,53 @@
+{
+     "interfaceType": "POST",
+     "requiredParameters": [
+          {
+               "name": "student_id",
+               "required": true,
+               "remark": "师弟id",
+               "nameVerify": "name_1419836878000",
+               "ruleVerify": "rule_1419836878000"
+          },
+          {
+               "name": "communicate_result",
+               "required": true,
+               "remark": "沟通结果",
+               "nameVerify": "name_1419836885000",
+               "ruleVerify": "rule_1419836885000"
+          },
+          {
+               "name": "communicate_record",
+               "required": true,
+               "remark": "沟通记录",
+               "nameVerify": "name_1419836925000",
+               "ruleVerify": "rule_1419836925000"
+          }
+     ],
+     "responseParameters": [
+          {
+               "id": "01",
+               "kind": "string",
+               "name": "error",
+               "rule": "@boolean",
+               "array": [],
+               "nameVerify": "name_1419836824000",
+               "ruleVerify": "rule_1419836824000",
+               "remark": "错误"
+          },
+          {
+               "id": "02",
+               "kind": "string",
+               "name": "message",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1419836870000",
+               "ruleVerify": "rule_1419836870000",
+               "remark": "错误、成功消息"
+          }
+     ],
+     "reqError": [],
+     "docError": [],
+     "interfaceUrl": "/hrg/track_result.json",
+     "interfaceName": "HRG提交跟进结果",
+     "lazyLoad": "no"
+}

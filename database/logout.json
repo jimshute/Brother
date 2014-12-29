@@ -1,0 +1,31 @@
+{
+     "interfaceType": "GET",
+     "requiredParameters": [],
+     "responseParameters": [
+          {
+               "id": "01",
+               "kind": "string",
+               "name": "error",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1419841332000",
+               "ruleVerify": "rule_1419841332000",
+               "remark": "错误"
+          },
+          {
+               "id": "02",
+               "kind": "string",
+               "name": "message",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1419841366000",
+               "ruleVerify": "rule_1419841366000",
+               "remark": "错误消息"
+          }
+     ],
+     "reqError": [],
+     "docError": [],
+     "interfaceUrl": "/logout.json",
+     "interfaceName": "用户注销",
+     "lazyLoad": "no"
+}

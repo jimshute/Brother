@@ -1,42 +1,49 @@
 <!DOCTYPE html>
 <html ng-app="app">
 <head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-    <link rel="stylesheet" href="https://alinw.alicdn.com/??platform/common/s/1.1/global/global.css,alinw/kuma/2.1.0/kuma.css"/>
-    <link rel="stylesheet" href="https://s.tbcdn.cn/g/platform/common/s/1.1/global/global.css"/>
-    <link rel="stylesheet" href="https://s.tbcdn.cn/g/alinw/kuma-button/2.0.0/kuma-button.css"/>
-    <link rel="stylesheet" href="https://s.tbcdn.cn/g/alinw/dialog/2.0.0/dialog.css"/>
-    <link rel="stylesheet" href="styles/index.css"/>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css"/>
+  <link rel="stylesheet"
+        href="https://alinw.alicdn.com/??platform/common/s/1.1/global/global.css,alinw/kuma/2.1.0/kuma.css"/>
+  <link rel="stylesheet" href="https://s.tbcdn.cn/g/platform/common/s/1.1/global/global.css"/>
+  <link rel="stylesheet" href="https://s.tbcdn.cn/g/alinw/kuma-button/2.0.0/kuma-button.css"/>
+  <link rel="stylesheet" href="https://s.tbcdn.cn/g/alinw/dialog/2.0.0/dialog.css"/>
+  <link rel="stylesheet" href="styles/index.css"/>
 </head>
 <body>
 <div id="head-bar">
-    <div id="head-body">
-        <div id="logo">
-            <img src="images/u55.png" alt=""/>
-            <div>&nbsp;|&nbsp;师兄辅助平台</div>
-        </div>
-        <div id="menu">
-            <ul>
-                <li class="selected">首页</li>
-                <li>管理</li>
-                <li>学习资料</li>
-            </ul>
-            <div id="avatar">
-                <img src="images/avatar.png" alt=""/>
-            </div>
-        </div>
+  <div id="head-body">
+    <div id="logo">
+      <img src="images/u55.png" alt=""/>
+
+      <div>&nbsp;|&nbsp;师兄辅助平台</div>
     </div>
+    <div id="menu">
+      <ul>
+        <li class="selected">首页</li>
+        <li>管理</li>
+        <li>学习资料</li>
+      </ul>
+      <div id="avatar">
+        <img src="images/avatar.png" alt=""/>
+      </div>
+    </div>
+  </div>
 </div>
-<div id="body" ng-view>
+<div id="body" ui-view>
 
 </div>
 <div id="footer"></div>
 </body>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
 <script src="../bower_components/angular/angular.js"></script>
 <script src="../bower_components/angular-route/angular-route.js"></script>
 <script src="../bower_components/angular-resource/angular-resource.js"></script>
+<script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 <script src="scripts/app.js"></script>
 <script src="scripts/config.js"></script>
 <script src="scripts/controller/brother.js"></script>
+<script src="scripts/controller/hrg.js"></script>
+<script src="scripts/controller/campus.js"></script>
 </html>

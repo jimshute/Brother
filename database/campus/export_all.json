@@ -1,0 +1,21 @@
+{
+     "interfaceType": "GET",
+     "requiredParameters": [],
+     "responseParameters": [
+          {
+               "id": "01",
+               "kind": "string",
+               "name": "down_link",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1419841236000",
+               "ruleVerify": "rule_1419841236000",
+               "remark": "下载链接"
+          }
+     ],
+     "reqError": [],
+     "docError": [],
+     "interfaceUrl": "/campus/export_all.json",
+     "interfaceName": "校招团队导出所有BU数据",
+     "lazyLoad": "no"
+}

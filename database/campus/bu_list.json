@@ -1,0 +1,213 @@
+{
+     "interfaceType": "GET",
+     "requiredParameters": [
+          {
+               "name": "keyword",
+               "required": true,
+               "remark": "搜索关键字",
+               "nameVerify": "name_1419840349000",
+               "ruleVerify": "rule_1419840349000"
+          },
+          {
+               "name": "start",
+               "required": true,
+               "remark": "分页起始位置",
+               "nameVerify": "name_1419840366000",
+               "ruleVerify": "rule_1419840366000"
+          },
+          {
+               "name": "limit",
+               "required": true,
+               "remark": "条数",
+               "nameVerify": "name_1419840385000",
+               "ruleVerify": "rule_1419840385000"
+          }
+     ],
+     "responseParameters": [
+          {
+               "id": "01",
+               "kind": "string",
+               "name": "bu",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1419840444000",
+               "ruleVerify": "rule_1419840444000",
+               "remark": "事业部名称"
+          },
+          {
+               "id": "02",
+               "kind": "string",
+               "name": "offer_number",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1419840463000",
+               "ruleVerify": "rule_1419840463000",
+               "remark": "offer人数"
+          },
+          {
+               "id": "03",
+               "kind": "string",
+               "name": "mentor_communicate_number",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1419840482000",
+               "ruleVerify": "rule_1419840482000",
+               "remark": "师兄人数"
+          },
+          {
+               "id": "04",
+               "kind": "object",
+               "name": "brother_communicate_result",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1419840507000",
+               "ruleVerify": "rule_1419840507000",
+               "remark": "师兄沟通结果"
+          },
+          {
+               "id": "05",
+               "kind": "object",
+               "name": "hr_result",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1419840531000",
+               "ruleVerify": "rule_1419840531000",
+               "remark": "hr沟通结果"
+          },
+          {
+               "id": "06",
+               "kind": "object",
+               "name": "brother_track_result",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1419840559000",
+               "ruleVerify": "rule_1419840559000",
+               "remark": "师兄跟进结果"
+          },
+          {
+               "id": "07",
+               "kind": "object",
+               "name": "hr_track_result",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1419840597000",
+               "ruleVerify": "rule_1419840597000",
+               "remark": "hr跟进师兄结果"
+          },
+          {
+               "id": "0401",
+               "kind": "string",
+               "name": "confirm",
+               "rule": "@number",
+               "array": [],
+               "nameVerify": "name_1419840666000",
+               "ruleVerify": "rule_1419840666000",
+               "remark": "确定来的人数"
+          },
+          {
+               "id": "0402",
+               "kind": "string",
+               "name": "abandon",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1419840721000",
+               "ruleVerify": "rule_1419840721000",
+               "remark": "确定不来的人数"
+          },
+          {
+               "id": "0403",
+               "kind": "string",
+               "name": "hesitate",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1419840736000",
+               "ruleVerify": "rule_1419840736000",
+               "remark": "犹豫中的人数"
+          },
+          {
+               "id": "0501",
+               "kind": "string",
+               "name": "confirm",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1419840765000",
+               "ruleVerify": "rule_1419840765000",
+               "remark": "确定来的人数"
+          },
+          {
+               "id": "0502",
+               "kind": "string",
+               "name": "abandon",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1419840766000",
+               "ruleVerify": "rule_1419840766000",
+               "remark": "确定不来的人数"
+          },
+          {
+               "id": "0503",
+               "kind": "string",
+               "name": "not_communicated",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1419840766000",
+               "ruleVerify": "rule_1419840766000",
+               "remark": "待沟通"
+          },
+          {
+               "id": "0601",
+               "kind": "string",
+               "name": "never",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1419840848000",
+               "ruleVerify": "rule_1419840848000",
+               "remark": "从未跟进的人数"
+          },
+          {
+               "id": "0602",
+               "kind": "string",
+               "name": "gt_1w",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1419840884000",
+               "ruleVerify": "rule_1419840884000",
+               "remark": "超过1周未跟进的人数"
+          },
+          {
+               "id": "0603",
+               "kind": "string",
+               "name": "not_communicated",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1419840939000",
+               "ruleVerify": "rule_1419840939000",
+               "remark": "待沟通"
+          },
+          {
+               "id": "0701",
+               "kind": "string",
+               "name": "urged",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1419840969000",
+               "ruleVerify": "rule_1419840969000",
+               "remark": "已催促的人数"
+          },
+          {
+               "id": "0702",
+               "kind": "string",
+               "name": "not_urged",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1419841012000",
+               "ruleVerify": "rule_1419841012000",
+               "remark": "未催促的人数"
+          }
+     ],
+     "reqError": [],
+     "docError": [],
+     "interfaceUrl": "/campus/bu_list.json",
+     "interfaceName": "校招团队列表BU列表",
+     "lazyLoad": "no"
+}

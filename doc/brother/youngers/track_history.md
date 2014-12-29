@@ -11,14 +11,13 @@
 {
  "histories": [
   {
-   "date": "--", //跟进日期
-   "history_status": "--", //历史状态（确定来、犹豫中、确定不来）
-   "comm_log": "--", //沟通记录
-   "comm_remark": "--", //沟通备注
-   "hesitate_reason": "--", //犹豫原因
-   "abandon_reason": "--" //不来原因
+   "communicate_date": "--", //跟进日期
+   "status": "--", //历史状态（确定来、犹豫中、确定不来）
+   "comm_record": "--", //沟通记录
+   "comment": "--", //沟通备注
+   "cause": "--" //原因分类
   }
  ],
- "name": "--" //师弟姓名
+ "student_name": "--" //师弟姓名
 }
 ```

@@ -14,7 +14,7 @@
           {
                "id": "0501",
                "kind": "string",
-               "name": "name",
+               "name": "student_name",
                "rule": "--",
                "array": [
                     "05"
@@ -50,7 +50,7 @@
           {
                "id": "0504",
                "kind": "string",
-               "name": "mail",
+               "name": "email",
                "rule": "--",
                "array": [
                     "05"
@@ -97,7 +97,7 @@
           {
                "id": "050701",
                "kind": "string",
-               "name": "date",
+               "name": "communication_date",
                "rule": "--",
                "array": [
                     "0507",
@@ -123,7 +123,7 @@
           {
                "id": "050703",
                "kind": "string",
-               "name": "comm_log",
+               "name": "communication_record",
                "rule": "--",
                "array": [
                     "0507",
@@ -136,7 +136,7 @@
           {
                "id": "050704",
                "kind": "string",
-               "name": "comm_remark",
+               "name": "comment",
                "rule": "--",
                "array": [
                     "0507",
@@ -149,7 +149,7 @@
           {
                "id": "050705",
                "kind": "string",
-               "name": "hesitate_reason",
+               "name": "communication_result",
                "rule": "--",
                "array": [
                     "0507",
@@ -157,12 +157,12 @@
                ],
                "nameVerify": "name_1419499146000",
                "ruleVerify": "rule_1419499146000",
-               "remark": "犹豫原因"
+               "remark": "沟通结果"
           },
           {
                "id": "050706",
                "kind": "string",
-               "name": "abandon_reason",
+               "name": "cause",
                "rule": "--",
                "array": [
                     "0507",
@@ -170,7 +170,7 @@
                ],
                "nameVerify": "name_1419499177000",
                "ruleVerify": "rule_1419499177000",
-               "remark": "不来原因"
+               "remark": "原因分类"
           }
      ],
      "reqError": [],

@@ -1,0 +1,49 @@
+{
+     "interfaceType": "GET",
+     "requiredParameters": [
+          {
+               "name": "bu_name",
+               "required": true,
+               "remark": "bu的名称",
+               "nameVerify": "name_1419841129000",
+               "ruleVerify": "rule_1419841129000"
+          }
+     ],
+     "responseParameters": [
+          {
+               "id": "01",
+               "kind": "string",
+               "name": "down_link",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1419841146000",
+               "ruleVerify": "rule_1419841146000",
+               "remark": "文件下载链接"
+          },
+          {
+               "id": "02",
+               "kind": "string",
+               "name": "err",
+               "rule": "@boolean",
+               "array": [],
+               "nameVerify": "name_1419841174000",
+               "ruleVerify": "rule_1419841174000",
+               "remark": "错误"
+          },
+          {
+               "id": "03",
+               "kind": "string",
+               "name": "message",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1419841186000",
+               "ruleVerify": "rule_1419841186000",
+               "remark": "错误消息"
+          }
+     ],
+     "reqError": [],
+     "docError": [],
+     "interfaceUrl": "/campus/export_bu.json",
+     "interfaceName": "校招团队导出单个BU数据",
+     "lazyLoad": "no"
+}

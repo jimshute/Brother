@@ -29,7 +29,7 @@
           {
                "id": "0101",
                "kind": "string",
-               "name": "date",
+               "name": "communicate_date",
                "rule": "--",
                "array": [
                     "01"
@@ -39,19 +39,9 @@
                "remark": "跟进日期"
           },
           {
-               "id": "02",
-               "kind": "string",
-               "name": "name",
-               "rule": "--",
-               "array": [],
-               "nameVerify": "name_1419499653000",
-               "ruleVerify": "rule_1419499653000",
-               "remark": "师弟姓名"
-          },
-          {
                "id": "0102",
                "kind": "string",
-               "name": "history_status",
+               "name": "status",
                "rule": "--",
                "array": [
                     "01"
@@ -63,7 +53,7 @@
           {
                "id": "0103",
                "kind": "string",
-               "name": "comm_log",
+               "name": "comm_record",
                "rule": "--",
                "array": [
                     "01"
@@ -75,7 +65,7 @@
           {
                "id": "0104",
                "kind": "string",
-               "name": "comm_remark",
+               "name": "comment",
                "rule": "--",
                "array": [
                     "01"
@@ -85,28 +75,26 @@
                "remark": "沟通备注"
           },
           {
-               "id": "0105",
-               "kind": "string",
-               "name": "hesitate_reason",
-               "rule": "--",
-               "array": [
-                    "01"
-               ],
-               "nameVerify": "name_1419499809000",
-               "ruleVerify": "rule_1419499809000",
-               "remark": "犹豫原因"
-          },
-          {
                "id": "0106",
                "kind": "string",
-               "name": "abandon_reason",
+               "name": "cause",
                "rule": "--",
                "array": [
                     "01"
                ],
                "nameVerify": "name_1419499834000",
                "ruleVerify": "rule_1419499834000",
-               "remark": "不来原因"
+               "remark": "原因分类"
+          },
+          {
+               "id": "02",
+               "kind": "string",
+               "name": "student_name",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1419499653000",
+               "ruleVerify": "rule_1419499653000",
+               "remark": "师弟姓名"
           }
      ],
      "reqError": [],
