@@ -1,0 +1,179 @@
+body {
+    background: url("../images/bg.jpg") no-repeat;
+    background-size: 100% auto;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+#index_bg {
+
+}
+
+.header-block {
+    text-align: center;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 53px;
+    line-height: 37px;
+    font-size: 26px;
+}
+
+/*.header-block:after {*/
+    /*content: '';*/
+    /*display: block;*/
+    /*clear: both;*/
+/*}*/
+
+#logo {
+    background: url("../images/u55.png") no-repeat;
+    background-size: 100% auto;
+    width: 216px;
+    display: inline-block;
+}
+
+#break {
+    background: url("../images/u57_line.png") no-repeat;
+    background-position: 50% 50%;
+    width: 50px;
+    display: inline-block;
+}
+
+#title {
+    color: white;
+    font-weight: 300;
+    word-wrap: break-word;
+    font-family: HiraginoSansGB-W3, 'HiraginoSans GB W3', 'Hiragino Sans GB';
+    width: auto;
+    display: inline-block;
+    line-height: 37px;
+}
+
+.functions-block {
+
+}
+
+.functions li {
+    background: url("../images/u1.png");
+    padding-top: 80px;
+    float: left;
+    height: 310px;
+    /*min-height: 310px;*/
+    padding-top: 80px;
+    padding-right: 10px;
+    width: 210px;
+    margin: 40px;
+}
+
+.functions li:hover {
+    background: url("../images/u1_mouseOver.png");
+    cursor: pointer;
+}
+
+.functions {
+    width: 870px;
+    margin: 0 auto;
+}
+
+.functions:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.functions .icon {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    padding: 18px;
+}
+
+.functions .icon div {
+    width: 64px;
+    height: 64px;
+    /*margin: 18px;*/
+}
+
+.functions .label {
+    padding-top: 20px;
+    font-size: 14px;
+    text-align: center;
+    color: #666;
+    font-weight: bold;
+}
+
+#brother {
+    background: url("../images/red.png");
+}
+
+#brother div {
+    background: url("../images/brother.png");
+}
+
+#hrg{
+    background: url("../images/green.png");
+}
+
+#hrg div {
+    background: url("../images/hrg.png");
+}
+
+#campus{
+    background: url("../images/blue.png");
+}
+
+#campus div {
+    background: url("../images/campus.png");
+}
+
+.login {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
+#login {
+    background-color: #f90;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+}
+
+#login:hover {
+    background-color: #FF6600;
+}
+
+.footer {
+    text-align: center;
+    color: white;
+    font-size: 12px;
+}

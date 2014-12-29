@@ -1,0 +1,281 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+#head-bar {
+    background-color: #474747;
+    height: 40px;
+    color: #fff;
+}
+
+#head-body, #body {
+    /*width: 80%;*/
+    /*min-width: 900px;*/
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#head-body:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+#logo {
+    float: left;
+    font-size: 18px;
+}
+
+#logo img {
+    margin-top: 7px;
+    height: 28px;
+    vertical-align: top;
+}
+
+#logo div {
+    width: auto;
+    display: inline-block;
+    line-height: 40px;
+}
+
+#menu {
+    float: right;
+}
+
+#menu ul {
+    float: left;
+}
+
+#menu ul:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+#menu li {
+    float: left;
+    padding: 0 30px;
+    line-height: 40px;
+    font-size: 14px;
+}
+
+#menu li:hover {
+    background-color: #666;
+    cursor: pointer;
+}
+
+
+#avatar {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    float: right;
+}
+
+#avatar img {
+    height: 30px;
+    width: 30px;
+}
+
+#avatar img:hover {
+    cursor: pointer;
+}
+
+#body {
+    padding: 5px;
+}
+
+#body:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#col-1, #col-2 {
+    width: 50%;
+    float: left;
+}
+
+#col-1>ul, #col-2>ul {
+    padding: 5px;
+}
+
+#col-1>ul>li, #col-2>ul>li {
+    background-color: #EFFDFB;
+    border: 1px solid #CCC;
+    padding: 16px;
+}
+
+#col-1 li:after, #col-2 li:after {
+    clear: both;
+    content: '';
+    display: block;
+
+}
+
+.younger-info {
+    height: 137px;
+    padding: 0px 9px 24px 9px;
+    border-bottom: 1px dotted #E4E4E4;
+}
+
+.younger-info:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.younger-avatar {
+    float: left;
+    display: table-cell;
+    padding-top: 12px;
+}
+
+.younger-avatar img {
+    width: 80px;
+    height: 80px;
+    vertical-align: middle;
+}
+
+.younger-detail {
+    padding-left: 120px;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.younger-detail .name {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.younger-detail .status {
+    font-size: 12px;
+    font-weight: normal;
+    float:right;
+    height: 30px;
+    width: 90px;
+    line-height: 30px;
+    color: #fff;
+    padding: 0 0 0 18px;
+    margin-right: -26px;
+}
+
+.younger-detail .status-warn {
+    background: url('../images/status_warn.png');
+}
+
+.younger-detail .status-normal {
+    background: url('../images/status_normal.png');
+}
+
+.track-history {
+    padding: 20px 0;
+}
+
+.track-history .time-line {
+
+}
+
+.time-line .time {
+    width: 80px;
+    float: left;
+    min-height: 1px;
+}
+
+.time-line .icon {
+    position: relative;
+    left: 7px;
+    width: 14px;
+    height: 14px;
+    background: url('../images/time_point.png');
+    float: left;
+}
+
+.time-line .content {
+    padding: 0 0 28px 14px;
+    margin-left: 93px;
+    border-left: 1px solid #CCC;
+}
+
+.time-line .bottom .content {
+    border-color: transparent;
+}
+
+.time-line .block {
+    border: 1px solid #E4E4E4;
+    background-color: #C1E8FD;
+
+}
+
+.time-line .block:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.time-line .status {
+    float: left;
+    width: 80px;
+    height: 100%;
+    min-height: 69px;
+    color: #FFF;
+    text-align: center;
+    padding-top: 16px;
+    line-height: 18px;
+    font-size: 12px;
+}
+
+.time-line .text{
+    /*float: left;*/
+    background-color: #FFF;
+    font-size: 12px;
+    margin-left: 80px;
+    padding: 11px 12px;
+    min-height: 69px;
+}
+
+.time-line .call{
+    float: right;
+    width: 22px;
+    height: 20px;
+    padding: 2px 0 0 0;
+    background: url("../images/call.png");
+    background-size: 100% 100%
+}
+
+/*.time-line*/
+
+/*.track-history .time-line:before {*/
+    /*display: block;*/
+    /*position: relative;*/
+    /*width: 1px;*/
+    /*background-color: #CCC;*/
+    /*top: 0;*/
+    /*bottom: 0;*/
+    /*content: '';*/
+    /*float: left;*/
+    /*height: 90px;*/
+/*}*/
+
+#footer {
+
+}
