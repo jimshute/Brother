@@ -2,8 +2,13 @@
  * Created by Jim on 2014/12/28.
  */
 angular.module('app', [
-    'ngRoute',
-    'ngResource',
-    'app.brother'
+  'ngRoute',
+  'ui.router',
+  'ngResource',
+  'app.brother',
+  'app.hrg',
+  'app.campus'
 ]);
 angular.module('app.brother', []);
+angular.module('app.hrg', []);
+angular.module('app.campus', []);
