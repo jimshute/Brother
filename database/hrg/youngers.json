@@ -211,7 +211,14 @@
                "remark": "hr跟进结果(无需跟进、已跟进）"
           }
      ],
-     "reqError": [],
+     "reqError": [
+          "请求参数［keywords］应该为必填项",
+          "请求参数［start］应该为必填项",
+          "请求参数［limit］应该为必填项",
+          "请求参数［sort］应该为必填项",
+          "请求参数［asc］应该为必填项",
+          "请求参数［status］应该为必填项"
+     ],
      "docError": [],
      "interfaceUrl": "/hrg/youngers.json",
      "interfaceName": "hrg列出师弟列表",
