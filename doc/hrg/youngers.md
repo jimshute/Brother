@@ -21,8 +21,8 @@
  "normal_number": "0", //正常跟进的人数（不要）
  "youngers": [
   {
-   "student_name": "Charles Perez", //师弟姓名
-   "mentor_name": "Sarah Williams", //师兄姓名
+   "student_name": "Michael Allen", //师弟姓名
+   "mentor_name": "Kimberly Rodriguez", //师兄姓名
    "communicate_date": "2013-02-11", //沟通日期
    "communicate_type": "电话", //沟通方式
    "status": "无需HR跟进", //师弟状态(无需HR跟进、需HR跟进）

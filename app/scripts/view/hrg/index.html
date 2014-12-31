@@ -46,7 +46,7 @@
       <td>户口</td>
       <td>xxxxxxxx</td>
       <td>
-        <div class="status"></div>
+        <div ng-show="true" class="track-status"><span>待跟进</span></div>
         <a class="btn btn-primary" href="#">去跟进</a>
         <div ng-show="false" class="status">
           <p>已跟进</p>
@@ -57,10 +57,9 @@
       <td>
       </td>
       <td>
+        <div ng-show="true" class="track-status"><span>超时</span></div>
         <a ng-show="true" class="btn btn-warning" href="#">催促师兄</a>
-
-        <div ng-show="true" class="urge-status">已催促师兄</div>
-        <div ng-show="true" class="track-status">超时</div>
+        <div ng-show="false" class="urge-status">已催促师兄</div>
       </td>
     </tr>
     <tr>
@@ -75,14 +74,13 @@
       <td>户口</td>
       <td>xxxxxxxx</td>
       <td>
+        <div ng-show="true" class="track-status"><span>待跟进</span></div>
         <a ng-show="false" class="btn btn-primary" href="#">去跟进</a>
-
         <div ng-show="true" class="status">
           <p>已跟进</p>
 
           <p>确定来</p>
         </div>
-        <div ng-show="true" class="track-status">超时</div>
       </td>
       <td>
       </td>

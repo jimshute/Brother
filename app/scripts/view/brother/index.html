@@ -1,214 +1,124 @@
-<div id="col-1">
+<div ng-init="init()">
+  <div id="col-1" class="{{getCol_1Class()}}">
     <ul>
-        <li>
-            <div class="younger-info">
-                <div class="younger-avatar">
-                    <img src="../../../images/younger-avatar.png"/>
-                </div>
-                <div class="younger-detail">
-                    <div class="name">
-                        王五
-                        <div class="status status-warn">超时未沟通</div>
-                    </div>
-                    <div class="phone">12332122312</div>
-                    <div class="email">aaa@163.com</div>
-                    <div class="edu">武汉大学|电子工程|硕士</div>
-                </div>
+      <li ng-repeat="student in col_1">
+        <div class="younger-info">
+          <div class="younger-avatar">
+            <img src="{{student.avatar}}"/>
+          </div>
+          <div class="younger-detail">
+            <div class="name">
+              {{student.student_name}}
+              <div class="status status-warn">{{student.status}}</div>
             </div>
-            <div class="track-history">
-                <ul class="time-line">
-                    <li class="top">
-                        <div class="time">&nbsp;</div>
-                        <div class="icon"></div>
-                        <div class="content">
-                            <a class="kuma-button kuma-button-mblue" href="#">新增今日跟进</a>
-                        </div>
-                    </li>
-                    <li class="item">
-                        <div class="time">2014/12/03</div>
-                        <div class="icon"></div>
-                        <div class="content">
-                            <div class="block">
-                                <div class="status">
-                                    确定来<br/>无需HR跟进
-                                </div>
-                                <div class="call">
-                                    <a href="#"></a>
-                                </div>
-                                <div class="text">
-                                    <p>沟通记录：</p>
+            <div class="phone">{{student.phone}}</div>
+            <div class="email">{{student.email}}</div>
+            <div class="edu">{{student.education}}</div>
+          </div>
+        </div>
+        <div class="track-history">
+          <ul class="time-line">
+            <li class="top">
+              <div class="time">&nbsp;</div>
+              <div class="icon"></div>
+              <div class="content">
+                <a class="kuma-button kuma-button-mblue" href="#">新增今日跟进</a>
+              </div>
+            </li>
+            <li ng-repeat="history in student.track_history" class="item">
+              <div class="time">{{history.communicate_date}}</div>
+              <div class="icon"></div>
+              <div class="content">
+                <div class="block">
+                  <div class="status">
+                    {{history.communicate_result}}<br/>{{history.track_status}}
+                  </div>
+                  <div class="call">
+                    <a href="#"></a>
+                  </div>
+                  <div class="text">
+                    <p>沟通记录：</p>
 
-                                    <p>&nbsp;</p>
+                    <p>{{history.communicate_record}}&nbsp;</p>
+                      <!--{{history.communicate_-->
+                    <p>沟通备注：</p>
 
-                                    <p>沟通备注：</p>
-
-                                    <p>&nbsp;</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="item">
-                        <div class="time">2014/12/03</div>
-                        <div class="icon"></div>
-                        <div class="content">
-                            <div class="block">
-                                <div class="status">
-                                    确定来<br/>无需HR跟进
-                                </div>
-                                <div class="call">
-                                    <a href="#"></a>
-                                </div>
-                                <div class="text">
-                                    <p>沟通记录：</p>
-
-                                    <p>&nbsp;</p>
-
-                                    <p>沟通备注：</p>
-
-                                    <p>&nbsp;</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="item">
-                        <div class="time">2014/12/03</div>
-                        <div class="icon"></div>
-                        <div class="content">
-                            <div class="block">
-                                <div class="status">
-                                    确定来<br/>无需HR跟进
-                                </div>
-                                <div class="call">
-                                    <a href="#"></a>
-                                </div>
-                                <div class="text">
-                                    <p>沟通记录：</p>
-
-                                    <p>&nbsp;</p>
-
-                                    <p>沟通备注：</p>
-
-                                    <p>&nbsp;</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="bottom">
-                        <div class="time"></div>
-                        <div class="icon"></div>
-                        <div class="content">
-                            <a href="#">查看更多</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </li>
+                    <p>{{history.comment}}&nbsp;</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="bottom">
+              <div class="time"></div>
+              <div class="icon"></div>
+              <div class="content">
+                <a href="#">查看更多</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </li>
     </ul>
-</div>
-<div id="col-2">
+  </div>
+  <div ng-show="showCol_2()" id="col-2">
     <ul>
-        <li>
-            <div class="younger-info">
-                <div class="younger-avatar">
-                    <img src="../../../images/younger-avatar.png"/>
-                </div>
-                <div class="younger-detail">
-                    <div class="name">
-                        王五
-                        <div class="status status-normal">师弟已入职</div>
-                    </div>
-                    <div class="phone">12332122312</div>
-                    <div class="email">aaa@163.com</div>
-                    <div class="edu">武汉大学|电子工程|硕士</div>
-                </div>
+      <li ng-repeat="student in col_2">
+        <div class="younger-info">
+          <div class="younger-avatar">
+            <img src="{{student.avatar}}"/>
+          </div>
+          <div class="younger-detail">
+            <div class="name">
+              {{student.student_name}}
+              <div class="status status-warn">{{student.status}}</div>
             </div>
-            <div class="track-history">
-                <ul class="time-line">
-                    <li class="top">
-                        <div class="time">&nbsp;</div>
-                        <div class="icon"></div>
-                        <div class="content">
-                            <a class="kuma-button kuma-button-mblue" href="#">新增今日跟进</a>
-                        </div>
-                    </li>
-                    <li class="item">
-                        <div class="time">2014/12/03</div>
-                        <div class="icon"></div>
-                        <div class="content">
-                            <div class="block">
-                                <div class="status">
-                                    确定来<br/>无需HR跟进
-                                </div>
-                                <div class="call">
-                                    <a href="#"></a>
-                                </div>
-                                <div class="text">
-                                    <p>沟通记录：</p>
+            <div class="phone">{{student.phone}}</div>
+            <div class="email">{{student.email}}</div>
+            <div class="edu">{{student.education}}</div>
+          </div>
+        </div>
+        <div class="track-history">
+          <ul class="time-line">
+            <li class="top">
+              <div class="time">&nbsp;</div>
+              <div class="icon"></div>
+              <div class="content">
+                <a class="kuma-button kuma-button-mblue" href="#">新增今日跟进</a>
+              </div>
+            </li>
+            <li ng-repeat="history in student.track_history" class="item">
+              <div class="time">{{history.communicate_date}}</div>
+              <div class="icon"></div>
+              <div class="content">
+                <div class="block">
+                  <div class="status">
+                    {{history.communicate_result}}<br/>{{history.track_status}}
+                  </div>
+                  <div class="call">
+                    <a href="#"></a>
+                  </div>
+                  <div class="text">
+                    <p>沟通记录：</p>
 
-                                    <p>&nbsp;</p>
+                    <p>{{history.communicate_record}}&nbsp;</p>
+                    <!--{{history.communicate_-->
+                    <p>沟通备注：</p>
 
-                                    <p>沟通备注：</p>
-
-                                    <p>&nbsp;</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="item">
-                        <div class="time">2014/12/03</div>
-                        <div class="icon"></div>
-                        <div class="content">
-                            <div class="block">
-                                <div class="status">
-                                    确定来<br/>无需HR跟进
-                                </div>
-                                <div class="call">
-                                    <a href="#"></a>
-                                </div>
-                                <div class="text">
-                                    <p>沟通记录：</p>
-
-                                    <p>&nbsp;</p>
-
-                                    <p>沟通备注：</p>
-
-                                    <p>&nbsp;</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="item">
-                        <div class="time">2014/12/03</div>
-                        <div class="icon"></div>
-                        <div class="content">
-                            <div class="block">
-                                <div class="status">
-                                    确定来<br/>无需HR跟进
-                                </div>
-                                <div class="call">
-                                    <a href="#"></a>
-                                </div>
-                                <div class="text">
-                                    <p>沟通记录：</p>
-
-                                    <p>&nbsp;</p>
-
-                                    <p>沟通备注：</p>
-
-                                    <p>&nbsp;</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="bottom">
-                        <div class="time"></div>
-                        <div class="icon"></div>
-                        <div class="content">
-                            <a href="#">查看更多</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </li>
+                    <p>{{history.comment}}&nbsp;</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="bottom">
+              <div class="time"></div>
+              <div class="icon"></div>
+              <div class="content">
+                <a href="#">查看更多</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </li>
     </ul>
+  </div>
 </div>

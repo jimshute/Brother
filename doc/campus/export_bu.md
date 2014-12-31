@@ -9,7 +9,7 @@
 ```js
 {
  "down_link": "--", //文件下载链接
- "err": true, //错误
+ "err": false, //错误
  "message": "--" //错误消息
 }
 ```

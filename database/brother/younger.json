@@ -27,7 +27,7 @@
                "id": "0502",
                "kind": "string",
                "name": "avatar",
-               "rule": "@image(80*80)",
+               "rule": "@image(80x80)",
                "array": [
                     "05"
                ],
@@ -63,7 +63,7 @@
                "id": "0505",
                "kind": "mock",
                "name": "status|1",
-               "rule": "[\"超时未沟通\",\"从未跟进\", \"正常\"]",
+               "rule": "[\"超时未沟通\",\"从未跟进\", \"正常\", \"师弟已入职\"]",
                "array": [
                     "05"
                ],
@@ -86,7 +86,7 @@
           {
                "id": "0507",
                "kind": "array(object)",
-               "name": "track_history",
+               "name": "track_history|3",
                "rule": "--",
                "array": [
                     "05"
@@ -97,7 +97,7 @@
           {
                "id": "050701",
                "kind": "string",
-               "name": "communication_date",
+               "name": "communicate_date",
                "rule": "@date",
                "array": [
                     "0507",
@@ -111,19 +111,19 @@
                "id": "050702",
                "kind": "mock",
                "name": "track_status|1",
-               "rule": "[\"确定来\", \"犹豫中\", \"确定不来\"]",
+               "rule": "[\"无需HR跟进\", \"需HR跟进\", \"已跟进\"]",
                "array": [
                     "0507",
                     "05"
                ],
                "nameVerify": "name_1419499006000",
                "ruleVerify": "rule_1419499006000",
-               "remark": "历史状态(确定来、犹豫中、确定不来)"
+               "remark": "历史状态(无需HR跟进、无需HR跟进、已跟进)"
           },
           {
                "id": "050703",
                "kind": "string",
-               "name": "communication_record",
+               "name": "communicate_record",
                "rule": "@word",
                "array": [
                     "0507",
@@ -148,16 +148,16 @@
           },
           {
                "id": "050705",
-               "kind": "string",
-               "name": "communication_result",
-               "rule": "@word|@word",
+               "kind": "mock",
+               "name": "communicate_result|1",
+               "rule": "[\"确定来\", \"犹豫中\", \"确定不来\"]",
                "array": [
                     "0507",
                     "05"
                ],
                "nameVerify": "name_1419499146000",
                "ruleVerify": "rule_1419499146000",
-               "remark": "沟通结果(确定来|无需HR跟进)"
+               "remark": "沟通结果(确定来、犹豫中、确定不来)"
           },
           {
                "id": "050706",

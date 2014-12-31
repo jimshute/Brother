@@ -7,7 +7,7 @@ angular.module('app', [
   'ngResource',
   'app.brother',
   'app.hrg',
-  'app.campus'
+  'app.campus',
 ]);
 angular.module('app.brother', []);
 angular.module('app.hrg', []);
