@@ -20,7 +20,7 @@
           {
                "id": "01",
                "kind": "array(object)",
-               "name": "histories",
+               "name": "histories|4-8",
                "rule": "--",
                "array": [],
                "nameVerify": "name_1419499582000",
@@ -30,7 +30,7 @@
                "id": "0101",
                "kind": "string",
                "name": "communicate_date",
-               "rule": "--",
+               "rule": "@date",
                "array": [
                     "01"
                ],
@@ -40,9 +40,9 @@
           },
           {
                "id": "0102",
-               "kind": "string",
-               "name": "status",
-               "rule": "--",
+               "kind": "mock",
+               "name": "status|1",
+               "rule": "[\"确定来\", \"犹豫中\", \"确定不来\"]",
                "array": [
                     "01"
                ],
@@ -54,7 +54,7 @@
                "id": "0103",
                "kind": "string",
                "name": "comm_record",
-               "rule": "--",
+               "rule": "@word",
                "array": [
                     "01"
                ],
@@ -66,7 +66,7 @@
                "id": "0104",
                "kind": "string",
                "name": "comment",
-               "rule": "--",
+               "rule": "@word",
                "array": [
                     "01"
                ],
@@ -76,9 +76,9 @@
           },
           {
                "id": "0106",
-               "kind": "string",
-               "name": "cause",
-               "rule": "--",
+               "kind": "mock",
+               "name": "cause|1",
+               "rule": "[\"户口\", \"新offer\", \"考研\"]",
                "array": [
                     "01"
                ],
@@ -90,7 +90,7 @@
                "id": "02",
                "kind": "string",
                "name": "student_name",
-               "rule": "--",
+               "rule": "@name",
                "array": [],
                "nameVerify": "name_1419499653000",
                "ruleVerify": "rule_1419499653000",

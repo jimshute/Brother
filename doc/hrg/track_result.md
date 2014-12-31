@@ -11,6 +11,6 @@
 ```js
 {
  "error": false, //错误
- "message": "--" //错误、成功消息
+ "message": "xxxxxxx" //错误、成功消息
 }
 ```

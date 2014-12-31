@@ -8,11 +8,11 @@
 #### 返回接口
 ```js
 {
- "name": "--", //师弟姓名
- "phone": "--", //师弟电话
- "email": "--", //师弟邮箱
- "school": "--", //师弟学校
- "major": "--", //师弟专业
- "education": "--" //师弟学历
+ "name": "Barbara Jones", //师弟姓名
+ "phone": "11111111111", //师弟电话
+ "email": "xxxxxxx@mock2easy.com", //师弟邮箱
+ "school": "xxxxxxx", //师弟学校
+ "major": "xxxxxxx", //师弟专业
+ "education": "xxxxxxx" //师弟学历
 }
 ```

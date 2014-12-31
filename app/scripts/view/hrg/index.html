@@ -1,76 +1,113 @@
-<div id="toptab">
+<div ng-init="init()">
+<div id="top-tab">
   <ul>
-    <li><a href="#">全部（800）</a></li>
+    <li class="active left"><a href="#">全部（800）</a></li>
     <li><a href="#">从未跟进（300）</a></li>
     <li><a href="#">1周未跟进（234）</a></li>
     <li><a href="#">正常跟进（444）</a></li>
   </ul>
 </div>
-<table class="table table-bordered">
-  <thead>
-  <tr>
-    <th>师弟</th>
-    <th>师兄</th>
-    <th>沟通日期</th>
-    <th>沟通方式</th>
-    <th>师弟状态</th>
-    <th>沟通结果</th>
-    <th>原因分类</th>
-    <th>师兄沟通记录</th>
-    <th>hr跟进同学结果</th>
-    <th>hr同学沟通记录</th>
-    <th>hr跟进师兄结果</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>张三<div class="status"></div></td>
-    <td>李四</td>
-    <td>2014/12/13</td>
-    <td>电话</td>
-    <td>无需HR跟进</td>
-    <td>确定不来</td>
-    <td>户口</td>
-    <td>xxxxxxxx</td>
-    <td>
-      <a class="btn btn-primary" href="#">去跟进</a>
-      <div ng-show="false" class="status">
-        <p>已跟进</p>
-        <p>确定来</p>
-      </div>
-    </td>
-    <td>
-    </td>
-    <td>
-      <a ng-show="true" class="btn btn-warning" href="#">催促师兄</a>
-      <div ng-show="true" class="urge-status">已催促师兄</div>
-      <div ng-show="true" class="track-status">超时</div>
-    </td>
-  </tr>
-  <tr>
-    <td>张三<div class="status"></div></td>
-    <td>李四</td>
-    <td>2014/12/13</td>
-    <td>电话</td>
-    <td>无需HR跟进</td>
-    <td>确定不来</td>
-    <td>户口</td>
-    <td>xxxxxxxx</td>
-    <td>
-      <a ng-show="false" class="btn btn-primary" href="#">去跟进</a>
-      <div ng-show="true" class="status">
-        <p>已跟进</p>
-        <p>确定来</p>
-      </div>
-      <div ng-show="true" class="track-status">超时</div>
-    </td>
-    <td>
-    </td>
-    <td>
-      <a class="btn btn-warning" href="#">催促师兄</a>
-      <div ng-show="true" class="urge-status">已催促师兄</div>
-      <div ng-show="true" class="track-status">超时</div>
-    </td>
-  </tr>
-  </tbody>
-</table>
+<div id="tool-bar">
+  <a class="btn btn-warning btn-sm" href="#">导出数据</a>
+
+  <div class="input-group search-box">
+    <input type="text" class="form-control" placeholder="请输入姓名/手机以搜索">
+      <span class="input-group-btn">
+        <button class="btn btn-warning" type="button">搜索</button>
+      </span>
+  </div>
+</div>
+<div id="data-list">
+  <table class="table table-bordered">
+    <thead>
+    <tr>
+      <th>师弟</th>
+      <th>师兄</th>
+      <th>沟通日期</th>
+      <th>沟通方式</th>
+      <th>师弟状态</th>
+      <th>沟通结果</th>
+      <th>原因分类</th>
+      <th>师兄沟通记录</th>
+      <th>hr跟进同学结果</th>
+      <th>hr同学沟通记录</th>
+      <th>hr跟进师兄结果</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>张三
+      </td>
+      <td>李四</td>
+      <td>2014/12/13</td>
+      <td>电话</td>
+      <td>无需HR跟进</td>
+      <td>确定不来</td>
+      <td>户口</td>
+      <td>xxxxxxxx</td>
+      <td>
+        <div class="status"></div>
+        <a class="btn btn-primary" href="#">去跟进</a>
+        <div ng-show="false" class="status">
+          <p>已跟进</p>
+
+          <p>确定来</p>
+        </div>
+      </td>
+      <td>
+      </td>
+      <td>
+        <a ng-show="true" class="btn btn-warning" href="#">催促师兄</a>
+
+        <div ng-show="true" class="urge-status">已催促师兄</div>
+        <div ng-show="true" class="track-status">超时</div>
+      </td>
+    </tr>
+    <tr>
+      <td>张三
+        <div class="status"></div>
+      </td>
+      <td>李四</td>
+      <td>2014/12/13</td>
+      <td>电话</td>
+      <td>无需HR跟进</td>
+      <td>确定不来</td>
+      <td>户口</td>
+      <td>xxxxxxxx</td>
+      <td>
+        <a ng-show="false" class="btn btn-primary" href="#">去跟进</a>
+
+        <div ng-show="true" class="status">
+          <p>已跟进</p>
+
+          <p>确定来</p>
+        </div>
+        <div ng-show="true" class="track-status">超时</div>
+      </td>
+      <td>
+      </td>
+      <td>
+        <a class="btn btn-warning" href="#">催促师兄</a>
+
+        <div ng-show="true" class="urge-status">已催促师兄</div>
+        <div ng-show="true" class="track-status">超时</div>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+<nav>
+  <ul class="pagination">
+    <li><a aria-label="Previous" href="#"><span aria-label="true">«</span></a></li>
+    <li><a ng-show="true" href="">…</a></li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a ng-show="true" href="">…</a></li>
+    <li><a aria-label="Next" href="#"><span aria-label="true">»</span></a></li>
+  </ul>
+</nav>
+</div>

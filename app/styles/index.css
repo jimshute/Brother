@@ -267,6 +267,80 @@ li {
 
 /* 师兄管理--END */
 
+/* HRG管理 */
+#top-tab {
+  margin-top: 20px;
+}
+
+#top-tab ul {
+  border-bottom: 1px solid #D4D4D4;
+  border-left: 1px solid #D4D4D4;
+  /*border-top: 1px solid #D4D4D4;*/
+}
+
+#top-tab ul:after, #tool-bar ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+#top-tab li {
+  border-top: 1px solid #D4D4D4;
+  border-right: 1px solid #D4D4D4;
+  float: left;
+}
+
+#top-tab li a {
+  color: #333;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  font-size: 12px;
+  padding: 5px 20px;
+}
+
+#top-tab li a:hover {
+  background-color: #F2F2F2;
+}
+
+#top-tab li.active {
+  border-top: 2px solid #FF6600;
+  color: #FF6600;
+  margin-bottom: -1px;
+}
+
+#top-tab li.active a {
+  padding-top: 4px;
+  background-color: #FFF;
+  padding-bottom: 6px;
+  color: #FF6600;
+  font-weight: bold;
+}
+
+#tool-bar {
+  margin-top: 6px;
+}
+
+#tool-bar .search-box {
+  float: right;
+  width: 366px;
+}
+
+#data-list {
+  margin-top: 10px;
+}
+
+#data-list table {
+  margin-bottom: 0;
+}
+
+#data-list th, #data-list td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* HRG管理--END */
+
 #footer {
 
 }

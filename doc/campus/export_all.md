@@ -6,6 +6,8 @@
 #### 返回接口
 ```js
 {
- "down_link": "--" //下载链接
+ "down_link": "www.npmjs.org/package/grunt-mock2easy", //下载链接
+ "error": true, //错误
+ "message": "xxxxxxx" //错误消息
 }
 ```

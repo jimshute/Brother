@@ -6,11 +6,31 @@
                "id": "01",
                "kind": "string",
                "name": "down_link",
-               "rule": "--",
+               "rule": "@url",
                "array": [],
                "nameVerify": "name_1419841236000",
                "ruleVerify": "rule_1419841236000",
                "remark": "下载链接"
+          },
+          {
+               "id": "02",
+               "kind": "string",
+               "name": "error",
+               "rule": "@boolean",
+               "array": [],
+               "nameVerify": "name_1419996364000",
+               "ruleVerify": "rule_1419996364000",
+               "remark": "错误"
+          },
+          {
+               "id": "03",
+               "kind": "string",
+               "name": "message",
+               "rule": "@word",
+               "array": [],
+               "nameVerify": "name_1419996375000",
+               "ruleVerify": "rule_1419996375000",
+               "remark": "错误消息"
           }
      ],
      "reqError": [],

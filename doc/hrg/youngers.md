@@ -13,24 +13,24 @@
 #### 返回接口
 ```js
 {
- "comfirm_number": "--", //确定来的人数
- "hesitate_number": "--", //犹豫中的人数
- "abandon_number": "--", //确定不来的人数
- "untrack_number": "--", //从未跟进的人数（不要）
- "untrack_1w_number": "--", //一周未跟进的人数（不要）
- "normal_number": "--", //正常跟进的人数（不要）
+ "comfirm_number": "0", //确定来的人数
+ "hesitate_number": "0", //犹豫中的人数
+ "abandon_number": "0", //确定不来的人数
+ "untrack_number": "0", //从未跟进的人数（不要）
+ "untrack_1w_number": "0", //一周未跟进的人数（不要）
+ "normal_number": "0", //正常跟进的人数（不要）
  "youngers": [
   {
-   "student_name": "--", //师弟姓名
-   "mentor_name": "--", //师兄姓名
-   "communicate_date": "--", //沟通日期
-   "communicate_type": "--", //沟通方式
-   "status": "--", //师弟状态(无需HR跟进、需HR跟进）
-   "communicate_result": "--", //沟通结果(确定不来、犹豫中、确定来）
-   "cause": "--", //原因分类
-   "hr_track_result": "--" //hr跟进结果(无需跟进、已跟进）
+   "student_name": "Charles Perez", //师弟姓名
+   "mentor_name": "Sarah Williams", //师兄姓名
+   "communicate_date": "2013-02-11", //沟通日期
+   "communicate_type": "电话", //沟通方式
+   "status": "无需HR跟进", //师弟状态(无需HR跟进、需HR跟进）
+   "communicate_result": "[\"确定不来\", \"犹豫中\", \"确定来\"]", //沟通结果(确定不来、犹豫中、确定来）
+   "cause": "xxxxxxx", //原因分类
+   "hr_track_result": "[\"无需跟进\", \"已跟进\"]" //hr跟进结果(无需跟进、已跟进）
   }
  ],
- "count": "--" //总条目数
+ "count": "0" //总条目数
 }
 ```

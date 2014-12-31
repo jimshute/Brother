@@ -38,7 +38,7 @@
                "id": "02",
                "kind": "string",
                "name": "message",
-               "rule": "--",
+               "rule": "@word",
                "array": [],
                "nameVerify": "name_1419836870000",
                "ruleVerify": "rule_1419836870000",

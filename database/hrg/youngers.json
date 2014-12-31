@@ -47,9 +47,9 @@
      "responseParameters": [
           {
                "id": "01",
-               "kind": "string",
-               "name": "comfirm_number",
-               "rule": "--",
+               "kind": "mock",
+               "name": "comfirm_number|1-400",
+               "rule": "1",
                "array": [],
                "nameVerify": "name_1419500942000",
                "ruleVerify": "rule_1419500942000",
@@ -57,9 +57,9 @@
           },
           {
                "id": "02",
-               "kind": "string",
-               "name": "hesitate_number",
-               "rule": "--",
+               "kind": "mock",
+               "name": "hesitate_number|1-200",
+               "rule": "1",
                "array": [],
                "nameVerify": "name_1419500967000",
                "ruleVerify": "rule_1419500967000",
@@ -67,9 +67,9 @@
           },
           {
                "id": "03",
-               "kind": "string",
-               "name": "abandon_number",
-               "rule": "--",
+               "kind": "mock",
+               "name": "abandon_number|1-100",
+               "rule": "1",
                "array": [],
                "nameVerify": "name_1419501150000",
                "ruleVerify": "rule_1419501150000",
@@ -77,9 +77,9 @@
           },
           {
                "id": "04",
-               "kind": "string",
-               "name": "untrack_number",
-               "rule": "--",
+               "kind": "mock",
+               "name": "untrack_number|1-200",
+               "rule": "1",
                "array": [],
                "nameVerify": "name_1419501165000",
                "ruleVerify": "rule_1419501165000",
@@ -87,9 +87,9 @@
           },
           {
                "id": "05",
-               "kind": "string",
-               "name": "untrack_1w_number",
-               "rule": "--",
+               "kind": "mock",
+               "name": "untrack_1w_number|1-100",
+               "rule": "1",
                "array": [],
                "nameVerify": "name_1419501213000",
                "ruleVerify": "rule_1419501213000",
@@ -97,9 +97,9 @@
           },
           {
                "id": "06",
-               "kind": "string",
-               "name": "normal_number",
-               "rule": "--",
+               "kind": "mock",
+               "name": "normal_number|1-100",
+               "rule": "1",
                "array": [],
                "nameVerify": "name_1419501233000",
                "ruleVerify": "rule_1419501233000",
@@ -108,7 +108,7 @@
           {
                "id": "07",
                "kind": "array(object)",
-               "name": "youngers",
+               "name": "youngers|1-100",
                "rule": "--",
                "array": [],
                "nameVerify": "name_1419501256000",
@@ -118,7 +118,7 @@
                "id": "0701",
                "kind": "string",
                "name": "student_name",
-               "rule": "--",
+               "rule": "@name",
                "array": [
                     "07"
                ],
@@ -130,7 +130,7 @@
                "id": "0702",
                "kind": "string",
                "name": "mentor_name",
-               "rule": "--",
+               "rule": "@name",
                "array": [
                     "07"
                ],
@@ -142,7 +142,7 @@
                "id": "0703",
                "kind": "string",
                "name": "communicate_date",
-               "rule": "--",
+               "rule": "@date",
                "array": [
                     "07"
                ],
@@ -152,9 +152,9 @@
           },
           {
                "id": "0704",
-               "kind": "string",
-               "name": "communicate_type",
-               "rule": "--",
+               "kind": "mock",
+               "name": "communicate_type|1",
+               "rule": "[\"电话\", \"手机\", \"QQ\", \"邮件\"]",
                "array": [
                     "07"
                ],
@@ -164,9 +164,9 @@
           },
           {
                "id": "0705",
-               "kind": "string",
-               "name": "status",
-               "rule": "--",
+               "kind": "mock",
+               "name": "status|1",
+               "rule": "[\"无需HR跟进\", \"需HR跟进\"]",
                "array": [
                     "07"
                ],
@@ -177,8 +177,8 @@
           {
                "id": "0706",
                "kind": "string",
-               "name": "communicate_result",
-               "rule": "--",
+               "name": "communicate_result|1",
+               "rule": "[\"确定不来\", \"犹豫中\", \"确定来\"]",
                "array": [
                     "07"
                ],
@@ -190,7 +190,7 @@
                "id": "0707",
                "kind": "string",
                "name": "cause",
-               "rule": "--",
+               "rule": "@word",
                "array": [
                     "07"
                ],
@@ -202,7 +202,7 @@
                "id": "0708",
                "kind": "string",
                "name": "hr_track_result",
-               "rule": "--",
+               "rule": "[\"无需跟进\", \"已跟进\"]",
                "array": [
                     "07"
                ],
@@ -212,9 +212,9 @@
           },
           {
                "id": "08",
-               "kind": "string",
-               "name": "count",
-               "rule": "--",
+               "kind": "mock",
+               "name": "count|1-100",
+               "rule": "1",
                "array": [],
                "nameVerify": "name_1419840198000",
                "ruleVerify": "rule_1419840198000",
