@@ -8,7 +8,7 @@
 #### 返回接口
 ```js
 {
- "name": "Frank Johnson", //师弟姓名
+ "name": "Anna Harris", //师弟姓名
  "phone": "11111111111", //师弟电话
  "email": "xxxxxxx@mock2easy.com", //师弟邮箱
  "school": "xxxxxxx", //师弟学校

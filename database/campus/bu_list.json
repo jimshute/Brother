@@ -21,6 +21,13 @@
                "remark": "查询关键字",
                "nameVerify": "name_1419994847000",
                "ruleVerify": "rule_1419994847000"
+          },
+          {
+               "name": "bu",
+               "required": true,
+               "remark": "事业部",
+               "nameVerify": "name_1420262543000",
+               "ruleVerify": "rule_1420262543000"
           }
      ],
      "responseParameters": [
@@ -62,7 +69,7 @@
           {
                "id": "0003",
                "kind": "mock",
-               "name": "mentor_communicate_number| 0-20",
+               "name": "mentor_number|0-20",
                "rule": 1,
                "array": [
                     "00"
@@ -252,8 +259,13 @@
                "remark": "未催促的人数"
           }
      ],
-     "reqError": [],
-     "docError": [],
+     "reqError": [
+          "请求参数［keyword］应该为必填项",
+          "请求参数［bu］应该为必填项"
+     ],
+     "docError": [
+          "接口文档缺少［asc］做为请求参数"
+     ],
      "interfaceUrl": "/campus/bu_list.json",
      "interfaceName": "校招团队获取BU列表",
      "lazyLoad": "no"

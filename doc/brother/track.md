@@ -12,7 +12,7 @@
 #### 返回接口
 ```js
 {
- "error": true, //错误
+ "error": false, //错误
  "message": "--" //错误、成功消息
 }
 ```

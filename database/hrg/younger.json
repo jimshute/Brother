@@ -71,7 +71,9 @@
                "remark": "师弟学历"
           }
      ],
-     "reqError": [],
+     "reqError": [
+          "请求参数［student_id］应该为必填项"
+     ],
      "docError": [],
      "interfaceUrl": "/hrg/younger.json",
      "interfaceName": "hrg查看师弟信息",

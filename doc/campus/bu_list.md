@@ -7,6 +7,7 @@
 	limit: `查询条目数`
 	start: `查询起始位置`
 	keyword: `查询关键字`
+	bu: `事业部`
 #### 返回接口
 ```js
 {
@@ -14,7 +15,7 @@
   {
    "bu": "xxxxxxx", //事业部名称
    "offer_number": "0", //offer人数
-   "mentor_communicate_number": "0", //师兄人数
+   "mentor_number": "0", //师兄人数
    "brother_communicate_result": { //师兄沟通结果
     "confirm": "0", //确定来的人数
     "abandon": "0", //确定不来的人数

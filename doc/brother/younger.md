@@ -8,12 +8,12 @@
 {
  "students": [
   {
-   "student_name": "Helen Jackson", //师弟姓名
+   "student_name": "Kevin Taylor", //师弟姓名
    "avatar": "http: //dummyimage.com/80x80", //师弟头像
    "phone": "11111111111", //师弟电话
    "email": "xxxxxxx@mock2easy.com", //师弟邮箱
    "status": "超时未沟通", //跟进状态(超时未沟通、从未跟进、正常)
-   "education": "udneq | ggqrjdrq | tiqreyjeh", //教育（学校 | 专业  学位）
+   "education": "qhbdgnp | okpen | lfcn", //教育（学校 | 专业  学位）
    "track_history": [
     {
      "communicate_date": "2013-02-11", //记录日期
@@ -23,7 +23,8 @@
      "communicate_result": "确定来", //沟通结果(确定来、犹豫中、确定不来)
      "cause": "户口" //原因分类
     }
-   ]
+   ],
+   "student_id": "710000197008094929" //师弟ID
   }
  ]
 }

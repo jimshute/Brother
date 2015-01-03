@@ -21,14 +21,17 @@
  "normal_number": "0", //正常跟进的人数（不要）
  "youngers": [
   {
-   "student_name": "Michael Allen", //师弟姓名
-   "mentor_name": "Kimberly Rodriguez", //师兄姓名
+   "student_name": "Helen White", //师弟姓名
+   "mentor_name": "Helen Williams", //师兄姓名
    "communicate_date": "2013-02-11", //沟通日期
    "communicate_type": "电话", //沟通方式
    "status": "无需HR跟进", //师弟状态(无需HR跟进、需HR跟进）
-   "communicate_result": "[\"确定不来\", \"犹豫中\", \"确定来\"]", //沟通结果(确定不来、犹豫中、确定来）
+   "communicate_result": "确定不来", //沟通结果(确定不来、犹豫中、确定来）
    "cause": "xxxxxxx", //原因分类
-   "hr_track_result": "[\"无需跟进\", \"已跟进\"]" //hr跟进结果(无需跟进、已跟进）
+   "hr_track_result": "无需跟进", //hr跟进结果(无需跟进、已跟进、未跟进）
+   "communicate_record": "xxxxxxx", //师兄沟通记录
+   "hr_communicate_record": "xxxxxxx", //HR沟通记录
+   "hr_track_mentor_result": "超时" //HR跟进师兄结果
   }
  ],
  "count": "0" //总条目数

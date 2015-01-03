@@ -1,6 +1,7 @@
 /**
  * Created by Jim on 2014/12/28.
  */
+'use strict';
 angular.module('app.brother').controller('brotherController', ['$scope', 'StudentModel', function ($scope, StudentModel) {
   console.log('Hello, brother');
   $scope.col_1 = [];
@@ -22,6 +23,10 @@ angular.module('app.brother').controller('brotherController', ['$scope', 'Studen
   };
   $scope.showCol_2 = function() {
     return $scope.listCount > 1;
+  };
+
+  $scope.openAddDialog = function() {
+
   };
 
 }]);

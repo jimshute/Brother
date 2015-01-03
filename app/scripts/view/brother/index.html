@@ -22,7 +22,7 @@
               <div class="time">&nbsp;</div>
               <div class="icon"></div>
               <div class="content">
-                <a class="kuma-button kuma-button-mblue" href="#">新增今日跟进</a>
+                <a ng-click="openAddDialog(student.student_id)" class="kuma-button kuma-button-mblue" href="#">新增今日跟进</a>
               </div>
             </li>
             <li ng-repeat="history in student.track_history" class="item">

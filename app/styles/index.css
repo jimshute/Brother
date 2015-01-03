@@ -117,7 +117,7 @@ li {
 }
 
 #col-1.col-fill-block {
-  width: 100%; !important;
+  width: 100%;
 }
 
 #col-1 > ul, #col-2 > ul {
@@ -329,18 +329,26 @@ li {
   width: 366px;
 }
 
-#data-list {
+#data-list, #bu-list {
   margin-top: 10px;
 }
 
-#data-list table {
+#data-list table, #bu-list {
   margin-bottom: 0;
 }
 
-#data-list th, #data-list td {
+#data-list th, #data-list td, #bu-list th, #bu-list td {
   position: relative;
   text-align: center;
   vertical-align: middle;
+}
+
+#data-list th {
+  height: auto;
+  padding: 10px auto;
+}
+
+#data-list td {
   height: 100px;
 }
 
@@ -368,6 +376,10 @@ li {
   border-right: 8px solid #FF6600;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
+}
+
+.hidden {
+    display: none !important;
 }
 
 /* HRG管理--END */

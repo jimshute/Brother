@@ -171,6 +171,18 @@
                "nameVerify": "name_1419499177000",
                "ruleVerify": "rule_1419499177000",
                "remark": "原因分类"
+          },
+          {
+               "id": "0508",
+               "kind": "string",
+               "name": "student_id",
+               "rule": "@id",
+               "array": [
+                    "05"
+               ],
+               "nameVerify": "name_1420269652000",
+               "ruleVerify": "rule_1420269652000",
+               "remark": "师弟ID"
           }
      ],
      "reqError": [],

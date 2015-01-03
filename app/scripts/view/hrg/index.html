@@ -1,19 +1,15 @@
 <div ng-init="init()">
 <div id="top-tab">
-  <ul>
-    <li class="active left"><a href="#">全部（800）</a></li>
-    <li><a href="#">从未跟进（300）</a></li>
-    <li><a href="#">1周未跟进（234）</a></li>
-    <li><a href="#">正常跟进（444）</a></li>
-  </ul>
+  <tab tabitems="tabitems" selected-item-changed="selectedItemChanged" selected-index="selectedIndex">
+  </tab>
 </div>
 <div id="tool-bar">
   <a class="btn btn-warning btn-sm" href="#">导出数据</a>
 
   <div class="input-group search-box">
-    <input type="text" class="form-control" placeholder="请输入姓名/手机以搜索">
+    <input type="text" name="keywords" ng-model="keywords" class="form-control" placeholder="请输入姓名/手机以搜索">
       <span class="input-group-btn">
-        <button class="btn btn-warning" type="button">搜索</button>
+        <button ng-click="search()" class="btn btn-warning" type="button">搜索</button>
       </span>
   </div>
 </div>
@@ -35,77 +31,39 @@
     </tr>
     </thead>
     <tbody>
-    <tr>
-      <td>张三
+    <tr ng-repeat="student in studentList">
+      <td>{{student.student_name}}
       </td>
-      <td>李四</td>
-      <td>2014/12/13</td>
-      <td>电话</td>
-      <td>无需HR跟进</td>
-      <td>确定不来</td>
-      <td>户口</td>
-      <td>xxxxxxxx</td>
+      <td>{{student.mentor_name}}</td>
+      <td>{{student.communicate_date}}</td>
+      <td>{{student.communicate_type}}</td>
+      <td>{{student.status}}</td>
+      <td>{{student.communicate_result}}</td>
+      <td>{{student.cause}}</td>
+      <td>{{student.communicate_record}}</td>
       <td>
-        <div ng-show="true" class="track-status"><span>待跟进</span></div>
-        <a class="btn btn-primary" href="#">去跟进</a>
-        <div ng-show="false" class="status">
-          <p>已跟进</p>
+        <div ng-show="{{student.hr_track_result === '未跟进'}}" class="track-status"><span>待跟进</span></div>
+        <a ng-show="{{student.hr_track_result === '未跟进'}}" class="btn btn-primary" href="#">去跟进</a>
+        <div ng-show="{{student.hr_track_result !== '未跟进'}}" class="status">
+          <p>{{student.hr_track_result}}</p>
 
-          <p>确定来</p>
+          <p>{{student.status}}</p>
         </div>
       </td>
       <td>
+          {{student.hr_communicate_record}}
       </td>
       <td>
-        <div ng-show="true" class="track-status"><span>超时</span></div>
-        <a ng-show="true" class="btn btn-warning" href="#">催促师兄</a>
-        <div ng-show="false" class="urge-status">已催促师兄</div>
-      </td>
-    </tr>
-    <tr>
-      <td>张三
-        <div class="status"></div>
-      </td>
-      <td>李四</td>
-      <td>2014/12/13</td>
-      <td>电话</td>
-      <td>无需HR跟进</td>
-      <td>确定不来</td>
-      <td>户口</td>
-      <td>xxxxxxxx</td>
-      <td>
-        <div ng-show="true" class="track-status"><span>待跟进</span></div>
-        <a ng-show="false" class="btn btn-primary" href="#">去跟进</a>
-        <div ng-show="true" class="status">
-          <p>已跟进</p>
-
-          <p>确定来</p>
-        </div>
-      </td>
-      <td>
-      </td>
-      <td>
-        <a class="btn btn-warning" href="#">催促师兄</a>
-
-        <div ng-show="true" class="urge-status">已催促师兄</div>
-        <div ng-show="true" class="track-status">超时</div>
+        <div ng-show="{{student.hr_track_mentor_result === '超时'}}" class="track-status"><span>超时</span></div>
+        <a ng-show="{{student.hr_track_mentor_result === '超时'}}" class="btn btn-warning" href="#">催促师兄</a>
+        <div ng-show="{{student.hr_track_mentor_result === '已催促'}}" class="urge-status">已催促师兄</div>
       </td>
     </tr>
     </tbody>
   </table>
 </div>
 
-<nav>
-  <ul class="pagination">
-    <li><a aria-label="Previous" href="#"><span aria-label="true">«</span></a></li>
-    <li><a ng-show="true" href="">…</a></li>
-    <li><a href="#">1</a></li>
-    <li><a href="#">2</a></li>
-    <li><a href="#">3</a></li>
-    <li><a href="#">4</a></li>
-    <li><a href="#">5</a></li>
-    <li><a ng-show="true" href="">…</a></li>
-    <li><a aria-label="Next" href="#"><span aria-label="true">»</span></a></li>
-  </ul>
+<nav style="text-align: center">
+    <pager first="1" total="pager.totalPages"  max-show-pages="pager.maxShowPages" on-page-changed="onPageChanged"></pager>
 </nav>
 </div>

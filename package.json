@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "body-parser": "^1.10.0",
-    "express": "^4.10.6",
+    "express": "3.*",
     "grunt-mock2easy": "^0.2.31",
     "imagemin-jpegtran": "^4.0.0",
     "json": "^9.0.2"

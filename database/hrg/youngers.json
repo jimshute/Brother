@@ -108,7 +108,7 @@
           {
                "id": "07",
                "kind": "array(object)",
-               "name": "youngers|1-100",
+               "name": "youngers|1-10",
                "rule": "--",
                "array": [],
                "nameVerify": "name_1419501256000",
@@ -176,7 +176,7 @@
           },
           {
                "id": "0706",
-               "kind": "string",
+               "kind": "mock",
                "name": "communicate_result|1",
                "rule": "[\"确定不来\", \"犹豫中\", \"确定来\"]",
                "array": [
@@ -200,15 +200,27 @@
           },
           {
                "id": "0708",
-               "kind": "string",
-               "name": "hr_track_result",
-               "rule": "[\"无需跟进\", \"已跟进\"]",
+               "kind": "mock",
+               "name": "hr_track_result|1",
+               "rule": "[\"无需跟进\", \"已跟进\", \"未跟进\"]",
                "array": [
                     "07"
                ],
                "nameVerify": "name_1419501599000",
                "ruleVerify": "rule_1419501599000",
-               "remark": "hr跟进结果(无需跟进、已跟进）"
+               "remark": "hr跟进结果(无需跟进、已跟进、未跟进）"
+          },
+          {
+               "id": "0709",
+               "kind": "string",
+               "name": "communicate_record",
+               "rule": "@word",
+               "array": [
+                    "07"
+               ],
+               "nameVerify": "name_1420200743000",
+               "ruleVerify": "rule_1420200743000",
+               "remark": "师兄沟通记录"
           },
           {
                "id": "08",
@@ -219,14 +231,35 @@
                "nameVerify": "name_1419840198000",
                "ruleVerify": "rule_1419840198000",
                "remark": "总条目数"
+          },
+          {
+               "id": "0710",
+               "kind": "string",
+               "name": "hr_communicate_record",
+               "rule": "@word",
+               "array": [
+                    "07"
+               ],
+               "nameVerify": "name_1420201027000",
+               "ruleVerify": "rule_1420201027000",
+               "remark": "HR沟通记录"
+          },
+          {
+               "id": "0711",
+               "kind": "mock",
+               "name": "hr_track_mentor_result|1",
+               "rule": "[\"超时\", \"正常\", \"已催促\"]",
+               "array": [
+                    "07"
+               ],
+               "nameVerify": "name_1420201136000",
+               "ruleVerify": "rule_1420201136000",
+               "remark": "HR跟进师兄结果"
           }
      ],
      "reqError": [
           "请求参数［keywords］应该为必填项",
-          "请求参数［start］应该为必填项",
-          "请求参数［limit］应该为必填项",
           "请求参数［sort］应该为必填项",
-          "请求参数［asc］应该为必填项",
           "请求参数［status］应该为必填项"
      ],
      "docError": [],
