@@ -2,7 +2,7 @@
  * Created by Jim on 2014/12/28.
  */
 'use strict';
-angular.module('app.brother').controller('brotherController', ['$scope', 'StudentModel', function ($scope, StudentModel) {
+angular.module('app.brother').controller('brotherController', ['$scope', 'StudentModel', '$modal', function ($scope, StudentModel, $modal) {
   console.log('Hello, brother');
   $scope.col_1 = [];
   $scope.col_2 = [];
@@ -26,7 +26,11 @@ angular.module('app.brother').controller('brotherController', ['$scope', 'Studen
   };
 
   $scope.openAddDialog = function() {
+    $modal.open({
+      template: 'hello',
+      scope: this
 
+    });
   };
 
 }]);

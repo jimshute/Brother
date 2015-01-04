@@ -5,6 +5,7 @@
 angular.module('app', [
   'ngRoute',
   'ui.router',
+  'ui.bootstrap',
   'ngResource',
   'app.brother',
   'app.hrg',
