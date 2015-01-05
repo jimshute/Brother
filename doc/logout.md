@@ -6,7 +6,7 @@
 #### 返回接口
 ```js
 {
- "error": false, //错误
+ "error": true, //错误
  "message": "xxxxxxx" //错误消息
 }
 ```

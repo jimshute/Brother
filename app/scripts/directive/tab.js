@@ -11,7 +11,7 @@ angular.module('app.directive').directive('tab', function() {
     scope: {
       items: '=tabitems',
       selectedItemChanged: '=selectedItemChanged',
-      selectedIndex: '=selectedIndex'
+      selectedIndex: '=selectedIndex',
     },
     link: function(scope, element, attrs) {
       console.log(scope.selectedIndexChanged);

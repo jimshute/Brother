@@ -1,69 +1,73 @@
 <div ng-init="init()">
-<div id="top-tab">
-  <tab tabitems="tabitems" selected-item-changed="selectedItemChanged" selected-index="selectedIndex">
-  </tab>
-</div>
-<div id="tool-bar">
-  <a class="btn btn-warning btn-sm" href="#">导出数据</a>
+  <div id="top-tab">
+    <tab tabitems="tabitems" selected-item-changed="selectedItemChanged" selected-index="selectedIndex">
+    </tab>
+  </div>
+  <div id="tool-bar">
+    <a class="btn btn-warning btn-sm" ng-click="export()" href="javascript:;">导出数据</a>
 
-  <div class="input-group search-box">
-    <input type="text" name="keywords" ng-model="keywords" class="form-control" placeholder="请输入姓名/手机以搜索">
+    <div class="input-group search-box">
+      <input type="text" name="keywords" ng-model="keywords" class="form-control" placeholder="请输入姓名/手机以搜索">
       <span class="input-group-btn">
         <button ng-click="search()" class="btn btn-warning" type="button">搜索</button>
       </span>
+    </div>
   </div>
-</div>
-<div id="data-list">
-  <table class="table table-bordered">
-    <thead>
-    <tr>
-      <th>师弟</th>
-      <th>师兄</th>
-      <th>沟通日期</th>
-      <th>沟通方式</th>
-      <th>师弟状态</th>
-      <th>沟通结果</th>
-      <th>原因分类</th>
-      <th>师兄沟通记录</th>
-      <th>hr跟进同学结果</th>
-      <th>hr同学沟通记录</th>
-      <th>hr跟进师兄结果</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr ng-repeat="student in studentList">
-      <td>{{student.student_name}}
-      </td>
-      <td>{{student.mentor_name}}</td>
-      <td>{{student.communicate_date}}</td>
-      <td>{{student.communicate_type}}</td>
-      <td>{{student.status}}</td>
-      <td>{{student.communicate_result}}</td>
-      <td>{{student.cause}}</td>
-      <td>{{student.communicate_record}}</td>
-      <td>
-        <div ng-show="{{student.hr_track_result === '未跟进'}}" class="track-status"><span>待跟进</span></div>
-        <a ng-show="{{student.hr_track_result === '未跟进'}}" class="btn btn-primary" href="#">去跟进</a>
-        <div ng-show="{{student.hr_track_result !== '未跟进'}}" class="status">
-          <p>{{student.hr_track_result}}</p>
+  <div id="data-list">
+    <table class="table table-bordered">
+      <thead>
+      <tr>
+        <th>师弟</th>
+        <th>师兄</th>
+        <th>沟通日期</th>
+        <th>沟通方式</th>
+        <th>师弟状态</th>
+        <th>沟通结果</th>
+        <th>原因分类</th>
+        <th>师兄沟通记录</th>
+        <th>hr跟进同学结果</th>
+        <th>hr同学沟通记录</th>
+        <th>hr跟进师兄结果</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr ng-repeat="student in studentList">
+        <td>{{student.student_name}}
+        </td>
+        <td>{{student.mentor_name}}</td>
+        <td>{{student.communicate_date}}</td>
+        <td>{{student.communicate_type}}</td>
+        <td>{{student.status}}</td>
+        <td>{{student.communicate_result}}</td>
+        <td>{{student.cause}}</td>
+        <td>{{student.communicate_record}}</td>
+        <td>
+          <div ng-show="{{student.hr_track_result === '未跟进'}}" class="track-status"><span>待跟进</span></div>
+          <a ng-show="{{student.hr_track_result === '未跟进'}}" class="btn btn-primary" href="#">去跟进</a>
 
-          <p>{{student.status}}</p>
-        </div>
-      </td>
-      <td>
+          <div ng-show="{{student.hr_track_result !== '未跟进'}}" class="status">
+            <p>{{student.hr_track_result}}</p>
+
+            <p>{{student.status}}</p>
+          </div>
+        </td>
+        <td>
           {{student.hr_communicate_record}}
-      </td>
-      <td>
-        <div ng-show="{{student.hr_track_mentor_result === '超时'}}" class="track-status"><span>超时</span></div>
-        <a ng-show="{{student.hr_track_mentor_result === '超时'}}" class="btn btn-warning" href="#">催促师兄</a>
-        <div ng-show="{{student.hr_track_mentor_result === '已催促'}}" class="urge-status">已催促师兄</div>
-      </td>
-    </tr>
-    </tbody>
-  </table>
+        </td>
+        <td>
+          <div ng-show="{{student.hr_track_mentor_result === '超时'}}" class="track-status"><span>超时</span></div>
+          <a ng-show="{{student.hr_track_mentor_result === '超时'}}" class="btn btn-warning" href="#">催促师兄</a>
+
+          <div ng-show="{{student.hr_track_mentor_result === '已催促'}}" class="urge-status">已催促师兄</div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <nav style="text-align: center">
+    <pager first="1" total="pager.totalPages" max-show-pages="pager.maxShowPages"
+           on-page-changed="onPageChanged"></pager>
+  </nav>
 </div>
 
-<nav style="text-align: center">
-    <pager first="1" total="pager.totalPages"  max-show-pages="pager.maxShowPages" on-page-changed="onPageChanged"></pager>
-</nav>
-</div>

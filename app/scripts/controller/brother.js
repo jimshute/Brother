@@ -2,11 +2,36 @@
  * Created by Jim on 2014/12/28.
  */
 'use strict';
-angular.module('app.brother').controller('brotherController', ['$scope', 'StudentModel', '$modal', function ($scope, StudentModel, $modal) {
+angular.module('app.brother').controller('brotherController', ['$scope', 'StudentModel', function ($scope, StudentModel) {
   console.log('Hello, brother');
   $scope.col_1 = [];
   $scope.col_2 = [];
   $scope.listCount = 1;
+  $scope.addTrackDialog = {
+    showDialog: false,
+    dropBoxCommType: {
+      items: [
+        {index: 0, value: '电话'},
+        {index: 0, value: 'QQ'},
+        {index: 0, value: '邮件'},
+        {index: 0, value: '手机'}
+      ],
+      selectedIndex: 0
+    },
+    dropBoxStatus: {
+      items: [
+        {index: 0, value: '需HR跟进'},
+        {index: 0, value: '无需HR跟进'}
+      ],
+      selectedIndex: 0
+    },
+    dropBoxResult: {
+      items: [],
+      selectedIndex: 0
+    },
+    communicate_date: null,
+    communicate_type: 0
+  };
   //$scope.studentList = [];
   $scope.init = function () {
     StudentModel.get(function(result) {
@@ -26,11 +51,8 @@ angular.module('app.brother').controller('brotherController', ['$scope', 'Studen
   };
 
   $scope.openAddDialog = function() {
-    $modal.open({
-      template: 'hello',
-      scope: this
+    $scope.addTrackDialog.showDialog = true;
 
-    });
   };
 
 }]);

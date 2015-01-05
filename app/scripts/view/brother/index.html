@@ -22,7 +22,7 @@
               <div class="time">&nbsp;</div>
               <div class="icon"></div>
               <div class="content">
-                <a ng-click="openAddDialog(student.student_id)" class="kuma-button kuma-button-mblue" href="#">新增今日跟进</a>
+                <a ng-click="openAddDialog()" class="kuma-button kuma-button-mblue" href="javascript:;">新增今日跟进</a>
               </div>
             </li>
             <li ng-repeat="history in student.track_history" class="item">
@@ -83,7 +83,7 @@
               <div class="time">&nbsp;</div>
               <div class="icon"></div>
               <div class="content">
-                <a class="kuma-button kuma-button-mblue" href="#">新增今日跟进</a>
+                <a ng-click="openAddDialog()" class="kuma-button kuma-button-mblue" href="javascript:;">新增今日跟进</a>
               </div>
             </li>
             <li ng-repeat="history in student.track_history" class="item">
@@ -121,4 +121,57 @@
       </li>
     </ul>
   </div>
+
+  <dialog show-dialog="addTrackDialog.showDialog" title="hello" width="560px">
+    <div class="content add-track">
+      <div class="kuma-form-item">
+        <label class="kuma-label">
+          <span class="kuma-form-required">*</span>沟通日期:
+        </label>
+        <input name="username" class="kuma-input" type="date" placeholder="日期">
+        <!--<div style="display:inline-block; min-height:290px;">-->
+          <!--<datepicker ng-model="dt" min-date="minDate" show-weeks="true" class="well well-sm"></datepicker>-->
+        <!--</div>-->
+        <!--<span class="kuma-form-other">请填写真实姓名</span>-->
+      </div>
+      <div class="kuma-form-item">
+        <label class="kuma-label">
+          <span class="kuma-form-required">*</span>沟通方式:
+        </label>
+        <selector selected-index="addTrackDialog.dropBoxCommType.selectedIndex" items="addTrackDialog.dropBoxCommType.items"></selector>
+
+        <!--<span class="kuma-form-other">请填写真实姓名</span>-->
+      </div>
+      <div class="kuma-form-item">
+        <label class="kuma-label">
+          <span class="kuma-form-required">*</span>师弟状态:
+        </label>
+        <selector selected-index="addTrackDialog.dropBoxStatus.selectedIndex" items="addTrackDialog.dropBoxStatus.items"></selector>
+
+        <!--<span class="kuma-form-other">请填写真实姓名</span>-->
+      </div>
+      <div class="kuma-form-item">
+        <label class="kuma-label">
+          <span class="kuma-form-required">*</span>沟通结果:
+        </label>
+
+        <selector selected-index="addTrackDialog.dropBoxResult.selectedIndex" items="addTrackDialog.dropBoxResult.items"></selector>
+        <!--<input name="username" class="kuma-input" type="text" placeholder="张三">-->
+        <!--<span class="kuma-form-other">请填写真实姓名</span>-->
+      </div>
+      <div class="kuma-form-item">
+        <label class="kuma-label">
+          <span class="kuma-form-required">*</span>沟通记录:
+        </label>
+        <input name="username" class="kuma-input" type="text" placeholder="张三">
+        <!--<span class="kuma-form-other">请填写真实姓名</span>-->
+      </div>
+    </div>
+    <div class="kuma-dialog-confirm">
+      <a class="kuma-button kuma-button-sblue" href="">确定</a>
+    </div>
+    <div class="kuma-dialog-cancel">
+      <a class="kuma-button kuma-button-swhite" href="">取消</a>
+    </div>
+  </dialog>
 </div>

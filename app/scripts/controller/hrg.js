@@ -117,4 +117,10 @@ angular.module('app.hrg').controller('hrgController', ['$scope', 'HrgStudentList
     });
 
   };
+
+  $scope.export = function() {
+    //$scope.templateUrl = '/scripts/view/brother/add_track.html';
+    //$scope.templateString = 'Clicked!';
+  }
+
 }]);
