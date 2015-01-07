@@ -5,7 +5,8 @@
 angular.module('app', [
   'ngRoute',
   'ui.router',
-  'ui.bootstrap',
+  //'ui.bootstrap',
+  'ui.date',
   'ngResource',
   'app.brother',
   'app.hrg',

@@ -42,7 +42,7 @@
                "id": "0102",
                "kind": "mock",
                "name": "status|1",
-               "rule": "[\"确定来\", \"犹豫中\", \"确定不来\"]",
+               "rule": "[\"需HR沟通\", \"无需HR沟通\"]",
                "array": [
                     "01"
                ],
@@ -53,7 +53,7 @@
           {
                "id": "0103",
                "kind": "string",
-               "name": "comm_record",
+               "name": "communicate_record",
                "rule": "@word",
                "array": [
                     "01"
@@ -95,10 +95,26 @@
                "nameVerify": "name_1419499653000",
                "ruleVerify": "rule_1419499653000",
                "remark": "师弟姓名"
+          },
+          {
+               "id": "0107",
+               "kind": "mock",
+               "name": "communicate_result|1",
+               "rule": "['未沟通', '确定来', '确定不来', '犹豫中']",
+               "array": [
+                    "01"
+               ],
+               "nameVerify": "name_1420526511000",
+               "ruleVerify": "rule_1420526511000"
           }
      ],
-     "reqError": [],
-     "docError": [],
+     "reqError": [
+          "请求参数［younger_id］应该为必填项",
+          "请求参数［limit］应该为必填项"
+     ],
+     "docError": [
+          "接口文档缺少［student_id］做为请求参数"
+     ],
      "interfaceUrl": "/brother/youngers/track_history.json",
      "interfaceName": "师弟跟进记录",
      "lazyLoad": "no"

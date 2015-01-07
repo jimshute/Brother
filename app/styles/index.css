@@ -39,12 +39,22 @@ li {
 
 .mask > div {
   box-sizing: border-box;
-  margin: 200px auto;
+  margin: 5% auto;
 }
 
 #head-bar {
   background-color: #474747;
   height: 40px;
+  color: #fff;
+}
+
+#head-bar a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#head-bar a:hover {
+  text-decoration: none;
   color: #fff;
 }
 
@@ -249,7 +259,7 @@ li {
 
 .time-line .block {
   border: 1px solid #E4E4E4;
-  background-color: #C1E8FD;
+  background-color: #0099FF;
 
 }
 
@@ -298,6 +308,8 @@ li {
 /* HRG管理 */
 #top-tab {
   margin-top: 20px;
+  border: 1px solid #E4E4E4;
+  padding: 20px;
 }
 
 #top-tab ul {
@@ -374,7 +386,12 @@ li {
 }
 
 #data-list td {
-  height: 100px;
+  /*height: 100px;*/
+}
+
+#data-list .detail {
+  text-align: left;
+  line-height: 24px;
 }
 
 #data-list .track-status {

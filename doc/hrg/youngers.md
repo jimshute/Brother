@@ -8,8 +8,9 @@
 	start: `起始数据`
 	limit: `数据数目`
 	sort: `排序列`
-	asc: `正序（是、否）`
-	status: `师弟状态（）`
+	asc: `正序（asc、desc）`
+	track_filter: `师弟跟进结果（数字，以“_”隔开）`
+	track_mentor_filter: `跟进师兄状态（数字，以“_”隔开）`
 #### 返回接口
 ```js
 {
@@ -21,8 +22,8 @@
  "normal_number": "0", //正常跟进的人数（不要）
  "youngers": [
   {
-   "student_name": "Paul Davis", //师弟姓名
-   "mentor_name": "Edward Young", //师兄姓名
+   "student_name": "Cynthia Wilson", //师弟姓名
+   "mentor_name": "Gary Hernandez", //师兄姓名
    "communicate_date": "2013-02-11", //沟通日期
    "communicate_type": "电话", //沟通方式
    "status": "无需HR跟进", //师弟状态(无需HR跟进、需HR跟进）
@@ -31,7 +32,14 @@
    "hr_track_result": "无需跟进", //hr跟进结果(无需跟进、已跟进、未跟进）
    "communicate_record": "xxxxxxx", //师兄沟通记录
    "hr_communicate_record": "xxxxxxx", //HR沟通记录
-   "hr_track_mentor_result": "超时" //HR跟进师兄结果
+   "hr_track_mentor_result": "超时", //HR跟进师兄结果
+   "phone": "11111111111", //师弟电话
+   "email": "xxxxxxx@mock2easy.com", //师弟邮箱
+   "school": "xxxxxxx", //师弟学校
+   "major": "xxxxxxx", //师弟专业
+   "education": "xxxxxxx", //师弟学历
+   "student_id": "620000200504249259", //师弟ID
+   "mentor_id": "530000199906043838" //师兄ID
   }
  ],
  "count": "0" //总条目数

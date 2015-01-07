@@ -8,6 +8,11 @@ angular.module('app.brother').controller('brotherController', ['$scope', 'Studen
   $scope.col_2 = [];
   $scope.listCount = 1;
   $scope.addTrackDialog = {
+    dateOptions: {
+      changeYear: true,
+      changeMonth: true,
+      yearRange: '1900:-0'
+    },
     showDialog: false,
     dropBoxCommType: {
       items: [
@@ -29,8 +34,12 @@ angular.module('app.brother').controller('brotherController', ['$scope', 'Studen
       items: [],
       selectedIndex: 0
     },
+    student_id: null,
     communicate_date: null,
-    communicate_type: 0
+    //communicate_type: 0,
+    //status: 0,
+    //communicate_result: 0,
+    communicate_record: ''
   };
   //$scope.studentList = [];
   $scope.init = function () {
@@ -43,16 +52,57 @@ angular.module('app.brother').controller('brotherController', ['$scope', 'Studen
       console.log($scope.col_2.length);
     });
   };
+
   $scope.getCol_1Class = function() {
     return $scope.listCount <= 1 ? 'col-fill-block' : '';
   };
+
   $scope.showCol_2 = function() {
     return $scope.listCount > 1;
   };
 
-  $scope.openAddDialog = function() {
+  $scope.openAddDialog = function(student_id) {
     $scope.addTrackDialog.showDialog = true;
-
+    $scope.addTrackDialog.student_id = student_id;
   };
+
+  $scope.saveTrack = function() {
+    //console.log($scope.addTrackDialog);
+    var data = {
+      communicate_date: $scope.addTrackDialog.communicate_date,
+      communicate_type: $scope.addTrackDialog.dropBoxCommType.selectedIndex,
+      status: $scope.addTrackDialog.dropBoxStatus.selectedIndex,
+      communicate_result: $scope.addTrackDialog.dropBoxResult.selectedIndex,
+      communicate_record: $scope.addTrackDialog.communicate_record
+    };
+    var obj = new StudentModel(data);
+    obj.$track({
+      student_id: $scope.addTrackDialog.student_id
+    }, function(data) {
+      console.log(data);
+    });
+    console.log(data);
+    $scope.init();
+    $scope.closeDialog();
+  };
+
+  $scope.closeDialog = function() {
+    this.addTrackDialog.showDialog = false;
+  };
+
+  $scope.showMore = function(student) {
+    StudentModel.trackHistory({
+      student_id: student.student_id
+    }, function(data) {
+      student.track_history = data.histories;
+      student.hide = true;
+      //console.log(data);
+    });
+  };
+
+  $scope.hideMore = function(student) {
+    student.track_history=student.track_history.slice(0, 3);
+    student.hide = false;
+  }
 
 }]);

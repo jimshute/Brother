@@ -35,6 +35,13 @@
                "remark": "沟通记录",
                "nameVerify": "name_1419831146000",
                "ruleVerify": "rule_1419831146000"
+          },
+          {
+               "name": "student_id",
+               "required": true,
+               "remark": "学生ID",
+               "nameVerify": "name_1420521460000",
+               "ruleVerify": "rule_1420521460000"
           }
      ],
      "responseParameters": [
@@ -59,10 +66,11 @@
                "remark": "错误、成功消息"
           }
      ],
-     "reqError": [],
+     "reqError": [
+          "请求参数［communicate_record］应该为必填项"
+     ],
      "docError": [],
      "interfaceUrl": "/brother/track.json",
      "interfaceName": "师兄跟进师弟",
-     "lazyLoad": "no",
-     "methodError": "请求类型异常请确认"
+     "lazyLoad": "no"
 }

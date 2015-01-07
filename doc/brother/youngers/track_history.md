@@ -12,12 +12,13 @@
  "histories": [
   {
    "communicate_date": "2013-02-11", //跟进日期
-   "status": "确定来", //历史状态（确定来、犹豫中、确定不来）
-   "comm_record": "xxxxxxx", //沟通记录
+   "status": "需HR沟通", //历史状态（确定来、犹豫中、确定不来）
+   "communicate_record": "xxxxxxx", //沟通记录
    "comment": "xxxxxxx", //沟通备注
-   "cause": "户口" //原因分类
+   "cause": "户口", //原因分类
+   "communicate_result": "未沟通"
   }
  ],
- "student_name": "Christopher Lopez" //师弟姓名
+ "student_name": "Melissa Williams" //师弟姓名
 }
 ```

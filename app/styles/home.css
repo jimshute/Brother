@@ -4,22 +4,22 @@ body {
     margin: 0;
 }
 
-p {
-    margin: 0;
-    padding: 0;
-}
+/*p {*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+/*}*/
 
-* {
-    box-sizing: border-box;
-}
+/** {*/
+    /*box-sizing: border-box;*/
+/*}*/
 
-ul {
-    padding: 0;
-}
+/*ul {*/
+    /*padding: 0;*/
+/*}*/
 
-li {
-    list-style: none;
-}
+/*li {*/
+    /*list-style: none;*/
+/*}*/
 
 .float-left {
     float: left;
@@ -49,12 +49,12 @@ li {
     /*clear: both;*/
 /*}*/
 
-#logo {
-    background: url("../images/u55.png") no-repeat;
-    background-size: 100% auto;
-    width: 216px;
-    display: inline-block;
-}
+/*#logo {*/
+    /*background: url("../images/u55.png") no-repeat;*/
+    /*background-size: 100% auto;*/
+    /*width: 216px;*/
+    /*display: inline-block;*/
+/*}*/
 
 #break {
     background: url("../images/u57_line.png") no-repeat;
@@ -74,7 +74,7 @@ li {
 }
 
 .functions-block {
-
+    padding-top: 150px;
 }
 
 .functions li {
@@ -118,7 +118,7 @@ li {
     /*margin: 18px;*/
 }
 
-.functions .label {
+.functions .block-label {
     padding-top: 20px;
     font-size: 14px;
     text-align: center;

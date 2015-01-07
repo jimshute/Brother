@@ -1,0 +1,20 @@
+{
+     "interfaceType": "POST",
+     "requiredParameters": [
+          {
+               "name": "orders",
+               "required": true,
+               "remark": "催促列表，为一名为orders的json数组，每个元素包含student_id和mentor_id。",
+               "nameVerify": "name_1420619420000",
+               "ruleVerify": "rule_1420619420000"
+          }
+     ],
+     "responseParameters": [],
+     "reqError": [
+          "请求参数［orders］应该为必填项"
+     ],
+     "docError": [],
+     "interfaceUrl": "/hrg/urge.json",
+     "interfaceName": "HR催促师兄",
+     "lazyLoad": "no"
+}

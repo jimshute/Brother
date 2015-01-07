@@ -9,10 +9,11 @@
 	status: `师弟状态`
 	communicate_result: `沟通结果`
 	communicate_record: `沟通记录`
+	student_id: `学生ID`
 #### 返回接口
 ```js
 {
- "error": false, //错误
+ "error": true, //错误
  "message": "--" //错误、成功消息
 }
 ```

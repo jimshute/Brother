@@ -32,16 +32,23 @@
           {
                "name": "asc",
                "required": true,
-               "remark": "正序（是、否）",
+               "remark": "正序（asc、desc）",
                "nameVerify": "name_1419500701000",
                "ruleVerify": "rule_1419500701000"
           },
           {
-               "name": "status",
+               "name": "track_filter",
                "required": true,
-               "remark": "师弟状态（）",
+               "remark": "师弟跟进结果（数字，以“_”隔开）",
                "nameVerify": "name_1419501093000",
                "ruleVerify": "rule_1419501093000"
+          },
+          {
+               "name": "track_mentor_filter",
+               "required": true,
+               "remark": "跟进师兄状态（数字，以“_”隔开）",
+               "nameVerify": "name_1420619053000",
+               "ruleVerify": "rule_1420619053000"
           }
      ],
      "responseParameters": [
@@ -255,12 +262,95 @@
                "nameVerify": "name_1420201136000",
                "ruleVerify": "rule_1420201136000",
                "remark": "HR跟进师兄结果"
+          },
+          {
+               "id": "0712",
+               "kind": "string",
+               "name": "phone|11",
+               "rule": "1",
+               "array": [
+                    "07"
+               ],
+               "nameVerify": "name_1420543864000",
+               "ruleVerify": "rule_1420543864000",
+               "remark": "师弟电话"
+          },
+          {
+               "id": "0713",
+               "kind": "string",
+               "name": "email",
+               "rule": "@email",
+               "array": [
+                    "07"
+               ],
+               "nameVerify": "name_1420543915000",
+               "ruleVerify": "rule_1420543915000",
+               "remark": "师弟邮箱"
+          },
+          {
+               "id": "0714",
+               "kind": "string",
+               "name": "school",
+               "rule": "@word",
+               "array": [
+                    "07"
+               ],
+               "nameVerify": "name_1420543941000",
+               "ruleVerify": "rule_1420543941000",
+               "remark": "师弟学校"
+          },
+          {
+               "id": "0715",
+               "kind": "string",
+               "name": "major",
+               "rule": "@word",
+               "array": [
+                    "07"
+               ],
+               "nameVerify": "name_1420543958000",
+               "ruleVerify": "rule_1420543958000",
+               "remark": "师弟专业"
+          },
+          {
+               "id": "0716",
+               "kind": "string",
+               "name": "education",
+               "rule": "@word",
+               "array": [
+                    "07"
+               ],
+               "nameVerify": "name_1420543970000",
+               "ruleVerify": "rule_1420543970000",
+               "remark": "师弟学历"
+          },
+          {
+               "id": "0717",
+               "kind": "string",
+               "name": "student_id",
+               "rule": "@id",
+               "array": [
+                    "07"
+               ],
+               "nameVerify": "name_1420618302000",
+               "ruleVerify": "rule_1420618302000",
+               "remark": "师弟ID"
+          },
+          {
+               "id": "0718",
+               "kind": "string",
+               "name": "mentor_id",
+               "rule": "@id",
+               "array": [
+                    "07"
+               ],
+               "nameVerify": "name_1420618845000",
+               "ruleVerify": "rule_1420618845000",
+               "remark": "师兄ID"
           }
      ],
      "reqError": [
           "请求参数［keywords］应该为必填项",
-          "请求参数［sort］应该为必填项",
-          "请求参数［status］应该为必填项"
+          "请求参数［sort］应该为必填项"
      ],
      "docError": [],
      "interfaceUrl": "/hrg/youngers.json",

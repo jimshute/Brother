@@ -22,4 +22,9 @@ angular.module('app').config(['$routeProvider', '$stateProvider', function ($rou
     templateUrl: 'scripts/view/campus/index.html',
     controller: 'campusController'
   });
+  $stateProvider.state('home', {
+    url: '/',
+    templateUrl: 'scripts/view/home.html',
+    controller: 'campusController'
+  });
 }]);

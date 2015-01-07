@@ -46,7 +46,9 @@
           }
      ],
      "reqError": [],
-     "docError": [],
+     "docError": [
+          "接口文档缺少［cause］做为请求参数"
+     ],
      "interfaceUrl": "/hrg/track_result.json",
      "interfaceName": "HRG提交跟进结果",
      "lazyLoad": "no"
