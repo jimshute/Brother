@@ -41,7 +41,9 @@
                "remark": "错误消息"
           }
      ],
-     "reqError": [],
+     "reqError": [
+          "请求参数［bu_name］应该为必填项"
+     ],
      "docError": [],
      "interfaceUrl": "/campus/export_bu.json",
      "interfaceName": "校招团队导出单个BU数据",

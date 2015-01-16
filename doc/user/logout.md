@@ -2,11 +2,11 @@
 #### 接口类型
 	GET
 #### 请求URL
-	/logout.json
+	/user/logout.json
 #### 返回接口
 ```js
 {
- "error": false, //错误
+ "error": true, //错误
  "message": "xxxxxxx" //错误消息
 }
 ```

@@ -22,8 +22,8 @@
  "normal_number": "0", //正常跟进的人数（不要）
  "youngers": [
   {
-   "student_name": "Cynthia Wilson", //师弟姓名
-   "mentor_name": "Gary Hernandez", //师兄姓名
+   "student_name": "Jose Taylor", //师弟姓名
+   "mentor_name": "Shirley Lee", //师兄姓名
    "communicate_date": "2013-02-11", //沟通日期
    "communicate_type": "电话", //沟通方式
    "status": "无需HR跟进", //师弟状态(无需HR跟进、需HR跟进）
@@ -38,8 +38,8 @@
    "school": "xxxxxxx", //师弟学校
    "major": "xxxxxxx", //师弟专业
    "education": "xxxxxxx", //师弟学历
-   "student_id": "620000200504249259", //师弟ID
-   "mentor_id": "530000199906043838" //师兄ID
+   "student_id": "320000200602234658", //师弟ID
+   "mentor_id": "360000197203192385" //师兄ID
   }
  ],
  "count": "0" //总条目数

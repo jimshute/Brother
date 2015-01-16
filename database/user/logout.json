@@ -25,7 +25,7 @@
      ],
      "reqError": [],
      "docError": [],
-     "interfaceUrl": "/logout.json",
+     "interfaceUrl": "/user/logout.json",
      "interfaceName": "用户注销",
      "lazyLoad": "no"
 }

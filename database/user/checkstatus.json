@@ -28,11 +28,37 @@
                "array": [],
                "nameVerify": "name_1419498206000",
                "ruleVerify": "rule_1419498206000"
+          },
+          {
+               "id": "04",
+               "kind": "object",
+               "name": "data",
+               "array": [],
+               "nameVerify": "name_1420685554000",
+               "ruleVerify": "rule_1420685554000"
+          },
+          {
+               "id": "0401",
+               "kind": "string",
+               "name": "avatar",
+               "rule": "@IMG(200x200)",
+               "array": [],
+               "nameVerify": "name_1420685570000",
+               "ruleVerify": "rule_1420685570000"
+          },
+          {
+               "id": "0402",
+               "kind": "string",
+               "name": "username",
+               "rule": "@name",
+               "array": [],
+               "nameVerify": "name_1420685578000",
+               "ruleVerify": "rule_1420685578000"
           }
      ],
      "reqError": [],
      "docError": [],
-     "interfaceUrl": "/checkstatus.json",
+     "interfaceUrl": "/user/checkstatus.json",
      "interfaceName": "检查用户登录状态",
      "lazyLoad": "no"
 }

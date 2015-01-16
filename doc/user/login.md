@@ -2,7 +2,7 @@
 #### 接口类型
 	GET
 #### 请求URL
-	/login.json
+	/user/login.json
 #### 返回接口
 ```js
 

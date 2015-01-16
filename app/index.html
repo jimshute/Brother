@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="styles/index.css"/>
 </head>
 <body>
-<div id="head-bar">
+<div ng-controller="indexController" ng-init="init()" id="head-bar">
   <div id="head-body">
     <div id="logo">
       <img src="images/u55.png" alt=""/>
@@ -21,12 +21,13 @@
     </div>
     <div id="menu">
       <ul>
-        <li class="selected">首页</li>
+        <li class="selected"><a href="#/">首页</a></li>
         <li>管理</li>
         <li><a href="http://xue.alibaba-inc.com/trs/plan/planDetail.htm?planUid=3c1146e9-b63c-4b81-a921-e214920c7ac3">学习资料</a></li>
       </ul>
       <div id="avatar">
-        <img src="images/avatar.png" alt=""/>
+        <img ng-show="loginStatus" src="{{avatar}}" alt=""/>
+        <a ng-show="!loginStatus" href="#/">登录</a>
       </div>
     </div>
   </div>
@@ -52,9 +53,11 @@
 <script src="scripts/directive/dialog.js"></script>
 <script src="scripts/directive/selector.js"></script>
 <script src="scripts/directive/checkbox_group.js"></script>
+<script src="scripts/controller/index.js"></script>
 <script src="scripts/controller/brother.js"></script>
 <script src="scripts/controller/hrg.js"></script>
 <script src="scripts/controller/campus.js"></script>
+<script src="scripts/service/user.js"></script>
 <script src="scripts/service/student.js"></script>
 <script src="scripts/service/hrgStudent.js"></script>
 <script src="scripts/service/bu.js"></script>

@@ -25,6 +25,6 @@ angular.module('app').config(['$routeProvider', '$stateProvider', function ($rou
   $stateProvider.state('home', {
     url: '/',
     templateUrl: 'scripts/view/home.html',
-    controller: 'campusController'
+    controller: 'indexController'
   });
 }]);

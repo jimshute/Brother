@@ -4,7 +4,7 @@
      "responseParameters": [],
      "reqError": [],
      "docError": [],
-     "interfaceUrl": "/login.json",
+     "interfaceUrl": "/user/login.json",
      "interfaceName": "登录操作（待定）",
      "lazyLoad": "no"
 }
