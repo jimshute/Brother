@@ -173,7 +173,7 @@
                "id": "0705",
                "kind": "mock",
                "name": "status|1",
-               "rule": "[\"无需HR跟进\", \"需HR跟进\"]",
+               "rule": "[0,1]",
                "array": [
                     "07"
                ],
@@ -185,7 +185,7 @@
                "id": "0706",
                "kind": "mock",
                "name": "communicate_result|1",
-               "rule": "[\"确定不来\", \"犹豫中\", \"确定来\"]",
+               "rule": "[0,1,2]",
                "array": [
                     "07"
                ],
@@ -208,14 +208,14 @@
           {
                "id": "0708",
                "kind": "mock",
-               "name": "hr_track_result|1",
-               "rule": "[\"无需跟进\", \"已跟进\", \"未跟进\"]",
+               "name": "hr_track_status|1",
+               "rule": "[0,1,2]",
                "array": [
                     "07"
                ],
                "nameVerify": "name_1419501599000",
                "ruleVerify": "rule_1419501599000",
-               "remark": "hr跟进结果(无需跟进、已跟进、未跟进）"
+               "remark": "hr跟进状态(无需跟进、已跟进、未跟进）"
           },
           {
                "id": "0709",
@@ -255,13 +255,13 @@
                "id": "0711",
                "kind": "mock",
                "name": "hr_track_mentor_result|1",
-               "rule": "[\"超时\", \"正常\", \"已催促\"]",
+               "rule": "[0,1,2]",
                "array": [
                     "07"
                ],
                "nameVerify": "name_1420201136000",
                "ruleVerify": "rule_1420201136000",
-               "remark": "HR跟进师兄结果"
+               "remark": "HR跟进师兄结果[超时, 正常, 已催促]"
           },
           {
                "id": "0712",

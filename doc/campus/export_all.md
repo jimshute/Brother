@@ -7,7 +7,7 @@
 ```js
 {
  "down_link": "www.npmjs.org/package/grunt-mock2easy", //下载链接
- "error": false, //错误
+ "error": true, //错误
  "message": "xxxxxxx" //错误消息
 }
 ```

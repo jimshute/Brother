@@ -13,7 +13,8 @@ angular.module('app', [
   'app.campus',
   'app.directive'
 ]);
-angular.module('app.brother', []);
-angular.module('app.hrg', []);
-angular.module('app.campus', []);
-angular.module('app.directive', []);
+angular.module('app.brother', ['app.constants']);
+angular.module('app.hrg', ['app.constants']);
+angular.module('app.campus', ['app.constants']);
+angular.module('app.directive', ['app.constants']);
+angular.module('app.constants', []);

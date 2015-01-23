@@ -3,6 +3,13 @@ html, body {
   padding: 0;
 }
 
+body {
+  background: url("../images/bg.jpg") no-repeat;
+  background-attachment: fixed;
+  background-size: 100% auto;
+  margin: 0;
+}
+
 p {
   margin: 0;
   padding: 0;
@@ -139,10 +146,6 @@ li {
   text-decoration: underline;
 }
 
-#body {
-  padding: 5px;
-}
-
 #body:after {
   content: '';
   display: block;
@@ -165,7 +168,7 @@ li {
 }
 
 #col-1 > ul > li, #col-2 > ul > li {
-  background-color: #EFFDFB;
+  background-color: rgba(248,248,248,0.9);
   border: 1px solid #CCC;
   padding: 16px;
   margin-bottom: 10px;
@@ -179,8 +182,8 @@ li {
 }
 
 .younger-info {
-  height: 137px;
-  padding: 0px 9px 24px 9px;
+  height: 120px;
+  padding: 0px 9px;
   border-bottom: 1px dotted #E4E4E4;
 }
 
@@ -204,6 +207,7 @@ li {
 
 .younger-detail {
   padding-left: 120px;
+  padding-top: 12px;
   font-size: 14px;
   line-height: 28px;
 }
@@ -233,12 +237,46 @@ li {
   background: url('../images/status_normal.png');
 }
 
+.younger-detail .status-0 {
+  background: url('../images/error_tag.png');
+}
+
+.younger-detail .status-1 {
+  background: url('../images/warn_tag.png');
+}
+
+.younger-detail .status-2, .younger-detail .status-3, .younger-detail .status-4 {
+  display: none;
+}
+
 .track-history {
   padding: 20px 0;
 }
 
 .track-history .time-line {
 
+}
+
+.track-history .content a.kuma-button {
+  border-color: #ff6600;
+  background-color: #FF6600;
+}
+
+.track-history .content a.kuma-button:hover {
+  background-color: #FF9311;
+  border-color: #ff9311;
+}
+
+.track-history .content .block.h-status-0 {
+  background-color: #99CC66;
+}
+
+.track-history .content .block.h-status-1 {
+  background-color: #FF6666;
+}
+
+.track-history .content .block.h-status-2 {
+  background-color: #FFCC33;
 }
 
 .time-line .time {
@@ -315,9 +353,17 @@ li {
 /* 师兄管理--END */
 
 /* HRG管理 */
+
+#hrg-body, #campus-body {
+  background-color: #FFF;
+  margin-top: 10px;
+  padding: 22px 18px;
+}
+
 #top-tab {
-  margin-top: 20px;
-  border: 1px solid #E4E4E4;
+  /*margin-top: 20px;*/
+  border: 1px dotted #E4E4E4;
+  background-color: #F1FBFB;
   padding: 20px;
 }
 
@@ -383,15 +429,51 @@ li {
   margin-bottom: 0;
 }
 
+#data-list thead th {
+  background-color: #E3E3E3;
+  border-bottom-color: #CCCCCC;
+  /*border: none;*/
+}
+
 #data-list th, #data-list td, #bu-list th, #bu-list td {
   position: relative;
-  text-align: center;
+  /*text-align: center;*/
   vertical-align: middle;
+}
+
+.checkbox-selector {
+  background-image: url("/images/arrow_down.png");
+  background-position: right 5px center;
+  background-repeat: no-repeat;
+}
+
+.checkbox-selector .kuma-select {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  text-align: left;
+}
+
+.checkbox-selector .inner-title {
+  padding: 6px 0 6px 14px;
+  height: 33px;
+  line-height: 18px;
+  background-image: url("/images/arrow_up.png");
+  background-position: right 4px center;
+  background-repeat: no-repeat;
 }
 
 #data-list th {
   height: auto;
   padding: 10px auto;
+}
+
+.stu-summary td {
+  border-top: 1px #E4E4E4 solid;
+  border-bottom: none;
+  background-color: #F7F7F7;
 }
 
 #data-list td {
@@ -403,30 +485,37 @@ li {
   line-height: 24px;
 }
 
-#data-list .track-status {
+/*#data-list .track-status {*/
   /*margin-right: -8px;*/
-  position: absolute;
-  right: 0px;
-  top: 10px;
-  float: right;
-  color: #FFF;
-  z-index: 999;
+  /*position: absolute;*/
+  /*right: 0px;*/
+  /*top: 10px;*/
+  /*float: right;*/
+  /*color: #FFF;*/
+  /*z-index: 999;*/
+/*}*/
+
+/*#data-list .track-status span {*/
+  /*width: 42px;*/
+  /*float: left;*/
+  /*line-height: 20px;*/
+  /*background-color: #FF6600;*/
+/*}*/
+
+/*#data-list .track-status:before {*/
+  /*float: left;*/
+  /*content: '';*/
+  /*border-right: 8px solid #FF6600;*/
+  /*border-top: 10px solid transparent;*/
+  /*border-bottom: 10px solid transparent;*/
+/*}*/
+
+.track-status-0 {
+  color: #FF9900;
 }
 
-#data-list .track-status span {
-  width: 42px;
-  float: left;
-  line-height: 20px;
-  background-color: #FF6600;
-
-}
-
-#data-list .track-status:before {
-  float: left;
-  content: '';
-  border-right: 8px solid #FF6600;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
+.urge-status-0 {
+  color: #FF9900;
 }
 
 .hidden {
@@ -435,6 +524,12 @@ li {
 
 /* HRG管理--END */
 
-#footer {
-
+.footer {
+  position: absolute;
+  padding-bottom: 20px;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  color: white;
+  font-size: 12px;
 }

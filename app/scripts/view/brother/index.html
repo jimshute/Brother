@@ -9,10 +9,10 @@
           <div class="younger-detail">
             <div class="name">
               {{student.student_name}}
-              <div class="status status-warn">{{student.track_status}}</div>
+              <div class="status status-{{student.track_status}}">{{brotherTrackStatus[student.track_status]}}</div>
             </div>
-            <div class="phone">{{student.phone}}</div>
-            <div class="email">{{student.email}}</div>
+            <div class="phone">{{student.phone}}&nbsp;&nbsp;|&nbsp;&nbsp;{{student.email}}</div>
+            <!--<div class="email">{{student.email}}</div>-->
             <div class="edu">{{student.education}}</div>
           </div>
         </div>
@@ -29,9 +29,9 @@
               <div class="time">{{history.communicate_date}}</div>
               <div class="icon"></div>
               <div class="content">
-                <div class="block">
+                <div class="block h-status-{{history.communicate_result}}">
                   <div class="status">
-                    {{history.communicate_result}}<br/>{{history.status}}
+                    {{brotherCommunicateResult[history.communicate_result]}}<br/>{{studentStatus[history.status]}}
                   </div>
                   <div class="call">
                     <a href="#"></a>
@@ -71,10 +71,10 @@
           <div class="younger-detail">
             <div class="name">
               {{student.student_name}}
-              <div class="status status-warn">{{student.track_status}}</div>
+              <div class="status status-{{student.track_status}}">{{brotherTrackStatus[student.track_status]}}</div>
             </div>
-            <div class="phone">{{student.phone}}</div>
-            <div class="email">{{student.email}}</div>
+            <div class="phone">{{student.phone}}&nbsp;&nbsp;|&nbsp;&nbsp;{{student.email}}</div>
+            <!--<div class="email">{{student.email}}</div>-->
             <div class="edu">{{student.education}}</div>
           </div>
         </div>
@@ -91,9 +91,9 @@
               <div class="time">{{history.communicate_date}}</div>
               <div class="icon"></div>
               <div class="content">
-                <div class="block">
+                <div class="block h-status-{{history.communicate_result}}">
                   <div class="status">
-                    {{history.communicate_result}}<br/>{{history.status}}
+                    {{brotherCommunicateResult[history.communicate_result]}}<br/>{{studentStatus[history.status]}}
                   </div>
                   <div class="call">
                     <a href="#"></a>

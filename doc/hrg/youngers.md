@@ -22,24 +22,24 @@
  "normal_number": "0", //正常跟进的人数（不要）
  "youngers": [
   {
-   "student_name": "Jose Taylor", //师弟姓名
-   "mentor_name": "Shirley Lee", //师兄姓名
+   "student_name": "Helen Lopez", //师弟姓名
+   "mentor_name": "Brian Walker", //师兄姓名
    "communicate_date": "2013-02-11", //沟通日期
    "communicate_type": "电话", //沟通方式
-   "status": "无需HR跟进", //师弟状态(无需HR跟进、需HR跟进）
-   "communicate_result": "确定不来", //沟通结果(确定不来、犹豫中、确定来）
+   "status": "0", //师弟状态(无需HR跟进、需HR跟进）
+   "communicate_result": "0", //沟通结果(确定不来、犹豫中、确定来）
    "cause": "xxxxxxx", //原因分类
-   "hr_track_result": "无需跟进", //hr跟进结果(无需跟进、已跟进、未跟进）
+   "hr_track_status": "0", //hr跟进状态(无需跟进、已跟进、未跟进）
    "communicate_record": "xxxxxxx", //师兄沟通记录
    "hr_communicate_record": "xxxxxxx", //HR沟通记录
-   "hr_track_mentor_result": "超时", //HR跟进师兄结果
+   "hr_track_mentor_result": "0", //HR跟进师兄结果[超时, 正常, 已催促]
    "phone": "11111111111", //师弟电话
    "email": "xxxxxxx@mock2easy.com", //师弟邮箱
    "school": "xxxxxxx", //师弟学校
    "major": "xxxxxxx", //师弟专业
    "education": "xxxxxxx", //师弟学历
-   "student_id": "320000200602234658", //师弟ID
-   "mentor_id": "360000197203192385" //师兄ID
+   "student_id": "510000198206294224", //师弟ID
+   "mentor_id": "150000200312212133" //师兄ID
   }
  ],
  "count": "0" //总条目数

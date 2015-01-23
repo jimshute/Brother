@@ -2,7 +2,7 @@
  * Created by Jim on 2014/12/28.
  */
 'use strict';
-angular.module('app.brother').controller('brotherController', ['$scope', 'StudentModel', function ($scope, StudentModel) {
+angular.module('app.brother').controller('brotherController', ['$scope', 'StudentModel', 'StudentStatus', 'BrotherTrackStatus', 'BrotherCommunicateResult', function ($scope, StudentModel, StudentStatus, BrotherTrackStatus, BrotherCommunicateResult) {
   console.log('Hello, brother');
   $scope.col_1 = [];
   $scope.col_2 = [];
@@ -41,6 +41,10 @@ angular.module('app.brother').controller('brotherController', ['$scope', 'Studen
     //communicate_result: 0,
     communicate_record: ''
   };
+  //Constants
+  $scope.studentStatus = StudentStatus;
+  $scope.brotherTrackStatus = BrotherTrackStatus;
+  $scope.brotherCommunicateResult = BrotherCommunicateResult;
   //$scope.studentList = [];
   $scope.init = function () {
     StudentModel.get(function(result) {
@@ -94,6 +98,9 @@ angular.module('app.brother').controller('brotherController', ['$scope', 'Studen
     StudentModel.trackHistory({
       student_id: student.student_id
     }, function(data) {
+      if (data.error && data.errno == '1001') {
+        location.href='';
+      }
       student.track_history = data.histories;
       student.hide = true;
       //console.log(data);

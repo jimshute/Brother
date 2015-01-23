@@ -1,0 +1,39 @@
+{
+     "interfaceType": "GET",
+     "requiredParameters": [],
+     "responseParameters": [
+          {
+               "id": "01",
+               "kind": "string",
+               "name": "error",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1421918603000",
+               "ruleVerify": "rule_1421918603000"
+          },
+          {
+               "id": "02",
+               "kind": "string",
+               "name": "message",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1421918609000",
+               "ruleVerify": "rule_1421918609000"
+          },
+          {
+               "id": "03",
+               "kind": "mock",
+               "name": "page|1",
+               "rule": "['brother', 'hrg', 'campus']",
+               "array": [],
+               "nameVerify": "name_1421918635000",
+               "ruleVerify": "rule_1421918635000",
+               "remark": "进入的页面(brother,hrg,campus)"
+          }
+     ],
+     "reqError": [],
+     "docError": [],
+     "interfaceUrl": "/user/goto_console.json",
+     "interfaceName": "用户进入管理",
+     "lazyLoad": "no"
+}

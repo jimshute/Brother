@@ -2,7 +2,7 @@
  * Created by yeyou.xj on 2014/12/29.
  */
 'use strict';
-angular.module('app.hrg').controller('hrgController', ['$scope', 'HrgStudentList', 'HrgStudentModel', function ($scope, HrgStudentList, HrgStudentModel) {
+angular.module('app.hrg').controller('hrgController', ['$scope', 'HrgStudentList', 'HrgStudentModel', 'StudentStatus', 'HrgCommunicateResult', 'HrgTrackBrotherStatus', 'BrotherTrackStatus', 'HrgTrackStatus', 'Cause', function ($scope, HrgStudentList, HrgStudentModel, StudentStatus, HrgCommunicateResult, HrgTrackBrotherStatus, BrotherTrackStatus, HrgTrackStatus, Cause) {
   console.log('Hello, Hrg');
   $scope.selectedIndex = 0;
   $scope.keywords = '';
@@ -13,6 +13,15 @@ angular.module('app.hrg').controller('hrgController', ['$scope', 'HrgStudentList
     pageSize: 10,
     maxShowPages: 5
   };
+
+  // Constants
+  $scope.studentStatus = StudentStatus;
+  $scope.hrgCommunicateResult = HrgCommunicateResult;
+  $scope.hrgTrackBrotherStatus = HrgTrackBrotherStatus;
+  $scope.hrgTrackStatus = HrgTrackStatus;
+  $scope.brotherTrackStatus = BrotherTrackStatus;
+  $scope.cause = Cause;
+
   //$scope.tabitems = [
   //  {
   //    itemText: '全部',
@@ -33,24 +42,24 @@ angular.module('app.hrg').controller('hrgController', ['$scope', 'HrgStudentList
   //];
 
   $scope.statusItems = [
-    {checked: true, value: 1, text: '确定来'},
-    {checked: true, value: 2, text: '确定不来'},
-    {checked: true, value: 3, text: '犹豫中'}
+    {checked: true, value: 0, text: HrgCommunicateResult['0']},
+    {checked: true, value: 1, text: HrgCommunicateResult['1']},
+    {checked: true, value: 2, text: HrgCommunicateResult['2']}
   ];
 
   $scope.allStatus = {checked: true, value: 0, text: '全部'};
 
-  $scope.trackFilter = [1, 2, 3];
+  $scope.trackFilter = [0, 1, 2];
 
   $scope.trackItems = [
-    {checked: true, value: 1, text: '从未跟进'},
-    {checked: true, value: 2, text: '一周未跟进'},
-    {checked: true, value: 3, text: '正常跟进'}
+    {checked: true, value: 0, text: BrotherTrackStatus['0']},
+    {checked: true, value: 1, text: BrotherTrackStatus['1']},
+    {checked: true, value: 2, text: BrotherTrackStatus['2']}
   ];
 
   $scope.allTrack = {checked: true, value: 0, text: '全部'};
 
-  $scope.trackMentorFilter = [1, 2, 3];
+  $scope.trackMentorFilter = [0, 1, 2];
 
   $scope.init = function () {
     $scope.loadList(function (data) {

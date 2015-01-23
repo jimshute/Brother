@@ -42,7 +42,7 @@
                "id": "0102",
                "kind": "mock",
                "name": "status|1",
-               "rule": "[\"需HR沟通\", \"无需HR沟通\"]",
+               "rule": "[0,1,2]",
                "array": [
                     "01"
                ],
@@ -100,7 +100,7 @@
                "id": "0107",
                "kind": "mock",
                "name": "communicate_result|1",
-               "rule": "['未沟通', '确定来', '确定不来', '犹豫中']",
+               "rule": "[0,1,2]",
                "array": [
                     "01"
                ],

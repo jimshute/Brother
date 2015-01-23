@@ -11,4 +11,5 @@
 10. [校招团队获取BU列表](./campus/bu_list.md)
 11. [检查用户登录状态](./user/checkstatus.md)
 12. [用户注销](./user/logout.md)
-13. [登录操作（待定）](./user/login.md)
+13. [用户进入管理](./user/goto_console.md)
+14. [登录操作（待定）](./user/login.md)

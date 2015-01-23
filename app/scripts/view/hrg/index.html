@@ -1,4 +1,4 @@
-<div ng-init="init()">
+<div id="hrg-body" ng-init="init()">
   <div id="top-tab">
     <!--<tab tabitems="tabitems" selected-item-changed="selectedItemChanged" selected-index="selectedIndex">-->
     <!--</tab>-->
@@ -38,7 +38,14 @@
         <th>师兄</th>
         <th>沟通日期</th>
         <th>沟通方式</th>
-        <th>师弟状态</th>
+        <th>
+          师弟状态
+          <!--<checkbox-selector content="师弟状态">-->
+            <!--<li class="kuma-select-item"><input type="checkbox" name=""/>hello1</li>-->
+            <!--<li class="kuma-select-item"><input type="checkbox" name=""/>hello2</li>-->
+            <!--<li class="kuma-select-item"><input type="checkbox" name=""/>hello3</li>-->
+          <!--</checkbox-selector>-->
+        </th>
         <th>沟通结果</th>
         <th>原因分类</th>
         <th>hr跟进同学结果</th>
@@ -47,34 +54,35 @@
       </tr>
       </thead>
       <tbody>
-      <tr ng-click="toggleCollapse($index)" ng-repeat-start="student in studentList">
+      <tr class="stu-summary" ng-click="toggleCollapse($index)" ng-repeat-start="student in studentList">
         <td><input type="checkbox" ng-click="checkItem($event)" ng-checked="student.checked"/></td>
-        <td>{{student.student_name}}
+        <td style="color: #288DF0">{{student.student_name}}
         </td>
         <td>{{student.mentor_name}}</td>
         <td>{{student.communicate_date}}</td>
         <td>{{student.communicate_type}}</td>
-        <td>{{student.status}}</td>
-        <td>{{student.communicate_result}}</td>
-        <td>{{student.cause}}</td>
+        <td>{{studentStatus[student.status]}}</td>
+        <td>{{hrgCommunicateResult[student.communicate_result]}}</td>
+        <td>{{cause[student.cause]}}</td>
         <td>
-          <div ng-show="student.hr_track_result === '未跟进'" class=""><span>待跟进</span></div>
+          <!--<div ng-show="student.hr_track_result === '未跟进'" class=""><span>待跟进</span></div>-->
 
-          <div ng-show="student.hr_track_result !== '未跟进'" class="status">
-            <p>{{student.hr_track_result}}</p>
-          </div>
+          <!--<div ng-show="student.hr_track_result !== '未跟进'" class="status">-->
+            <!--<p>{{student.hr_track_result}}</p>-->
+          <!--</div>-->
+          <div class="track-status-{{student.hr_track_status}}">{{hrgTrackStatus[student.hr_track_status]}}</div>
         </td>
         <td>
-          <div class="urge-status">{{student.hr_track_mentor_result}}</div>
+          <div class="urge-status-{{student.hr_track_mentor_result}}">{{hrgTrackBrotherStatus[student.hr_track_mentor_result]}}</div>
         </td>
         <td>
-          <a ng-show="student.hr_track_result === '未跟进'" class="kuma-button kuma-button-swhite"
+          <a ng-show="student.hr_track_status == 0" class="kuma-button kuma-button-swhite"
              ng-click="trackStudent(student.student_id, $event)" href="javascript:;">去跟进</a>
-          <a ng-show="student.hr_track_mentor_result === '超时'" class="kuma-button kuma-button-swhite"
+          <a ng-show="student.hr_track_mentor_result == 0" class="kuma-button kuma-button-swhite"
              ng-click="urge(student.student_id, student.mentor_id, $event)" href="javascript:;">催促师兄</a>
         </td>
       </tr>
-      <tr ng-show="!student.collapsed" ng-repeat-end>
+      <tr class="stu-detail" ng-show="!student.collapsed" ng-repeat-end>
         <td></td>
         <td colspan="10">
           <div class="detail">
@@ -104,9 +112,9 @@
           <span class="kuma-form-required">*</span>HR跟进结果：
         </label>
         <label class="kuma-form-text">
-          <input name="result" ng-model="addTrackDialog.result" value=0 type="radio"/>确定来
-          <input name="result" ng-model="addTrackDialog.result" value=1 type="radio"/>确定不来
-          <input name="result" ng-model="addTrackDialog.result" value=2 type="radio"/>犹豫中
+          <input name="result" ng-model="addTrackDialog.result" value=0 type="radio"/>{{hrgCommunicateResult['0']}}
+          <input name="result" ng-model="addTrackDialog.result" value=1 type="radio"/>{{hrgCommunicateResult['1']}}
+          <input name="result" ng-model="addTrackDialog.result" value=2 type="radio"/>{{hrgCommunicateResult['2']}}
         </label>
         <!--<span class="kuma-form-other">请填写真实姓名</span>-->
       </div>
