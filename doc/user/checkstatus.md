@@ -6,12 +6,12 @@
 #### 返回接口
 ```js
 {
- "error": false,
+ "error": true,
  "msg": "xxxxxxx",
  "status": true,
  "data": {
   "avatar": "http:", //dummyimage.com/200x200
-  "username": "Edward Smith"
+  "username": "Daniel Lopez"
  }
 }
 ```

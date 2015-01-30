@@ -22,8 +22,8 @@
  "normal_number": "0", //正常跟进的人数（不要）
  "youngers": [
   {
-   "student_name": "Helen Lopez", //师弟姓名
-   "mentor_name": "Brian Walker", //师兄姓名
+   "student_name": "Laura Taylor", //师弟姓名
+   "mentor_name": "Paul Johnson", //师兄姓名
    "communicate_date": "2013-02-11", //沟通日期
    "communicate_type": "电话", //沟通方式
    "status": "0", //师弟状态(无需HR跟进、需HR跟进）
@@ -38,8 +38,8 @@
    "school": "xxxxxxx", //师弟学校
    "major": "xxxxxxx", //师弟专业
    "education": "xxxxxxx", //师弟学历
-   "student_id": "510000198206294224", //师弟ID
-   "mentor_id": "150000200312212133" //师兄ID
+   "student_id": "14000019891105864X", //师弟ID
+   "mentor_id": "520000200403295017" //师兄ID
   }
  ],
  "count": "0" //总条目数
