@@ -1,24 +1,24 @@
 body {
-    background: url("../images/bg.jpg") no-repeat;
+    background: url("../images/bg.png") no-repeat;
     background-size: 100% auto;
     margin: 0;
 }
 
 /*p {*/
-    /*margin: 0;*/
-    /*padding: 0;*/
+/*margin: 0;*/
+/*padding: 0;*/
 /*}*/
 
 /** {*/
-    /*box-sizing: border-box;*/
+/*box-sizing: border-box;*/
 /*}*/
 
 /*ul {*/
-    /*padding: 0;*/
+/*padding: 0;*/
 /*}*/
 
 /*li {*/
-    /*list-style: none;*/
+/*list-style: none;*/
 /*}*/
 
 .float-left {
@@ -44,16 +44,16 @@ body {
 }
 
 /*.header-block:after {*/
-    /*content: '';*/
-    /*display: block;*/
-    /*clear: both;*/
+/*content: '';*/
+/*display: block;*/
+/*clear: both;*/
 /*}*/
 
 /*#logo {*/
-    /*background: url("../images/u55.png") no-repeat;*/
-    /*background-size: 100% auto;*/
-    /*width: 216px;*/
-    /*display: inline-block;*/
+/*background: url("../images/u55.png") no-repeat;*/
+/*background-size: 100% auto;*/
+/*width: 216px;*/
+/*display: inline-block;*/
 /*}*/
 
 #break {
@@ -78,7 +78,8 @@ body {
 }
 
 .functions li {
-    background: url("../images/u1.png");
+    /*background: url("../images/u1.png");*/
+    background-color: rgba(255, 255, 255, 0.5);
     padding-top: 80px;
     float: left;
     height: 310px;
@@ -90,7 +91,8 @@ body {
 }
 
 .functions li:hover {
-    background: url("../images/u1_mouseOver.png");
+    /*background: url("../images/u1_mouseOver.png");*/
+    background-color: rgba(255, 255, 255, 0.8);
     cursor: pointer;
 }
 
@@ -134,7 +136,7 @@ body {
     background: url("../images/brother.png");
 }
 
-#hrg{
+#hrg {
     background: url("../images/green.png");
 }
 
@@ -142,7 +144,7 @@ body {
     background: url("../images/hrg.png");
 }
 
-#campus{
+#campus {
     background: url("../images/blue.png");
 }
 
@@ -157,15 +159,18 @@ body {
 }
 
 #login {
-    background-color: #f90;
-    width: 120px;
-    height: 40px;
-    line-height: 40px;
-    font-size: 14px;
+    background-color: #FF6600;
+    border-radius: 27px;
+    width: 194px;
+    height: 54px;
+    line-height: 54px;
+    font-size: 20px;
+    font-weight: bold;
     color: white;
     display: inline-block;
     text-decoration: none;
     text-align: center;
+    box-shadow: 0px 0px 12px 0px #222;
 }
 
 #login:hover {

@@ -5,7 +5,8 @@
   <title></title>
   <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css"/>
   <link rel="stylesheet" href="../bower_components/jquery-ui/themes/smoothness/jquery-ui.css"/>
-  <link rel="stylesheet" href="https://alinw.alicdn.com/??platform/common/s/1.1/global/global.css,alinw/kuma/2.1.0/kuma.css"/>
+  <link rel="stylesheet"
+        href="https://alinw.alicdn.com/??platform/common/s/1.1/global/global.css,alinw/kuma/2.1.0/kuma.css"/>
   <link rel="stylesheet" href="https://s.tbcdn.cn/g/platform/common/s/1.1/global/global.css"/>
   <link rel="stylesheet" href="https://s.tbcdn.cn/g/alinw/kuma-button/2.0.0/kuma-button.css"/>
   <link rel="stylesheet" href="https://s.tbcdn.cn/g/alinw/dialog/2.0.0/dialog.css"/>
@@ -22,12 +23,15 @@
     <div id="menu">
       <ul>
         <li class="selected"><a href="#/">首页</a></li>
-        <li>管理</li>
-        <li><a href="http://xue.alibaba-inc.com/trs/plan/planDetail.htm?planUid=3c1146e9-b63c-4b81-a921-e214920c7ac3">学习资料</a></li>
+        <li><a href="#/" ng-click="gotoConsole()">管理</a></li>
+        <li><a href="http://xue.alibaba-inc.com/trs/plan/planDetail.htm?planUid=3c1146e9-b63c-4b81-a921-e214920c7ac3">学习资料</a>
+        </li>
       </ul>
       <div id="avatar">
-        <img ng-show="loginStatus" src="{{avatar}}" alt=""/>
-        <a ng-show="!loginStatus" href="#/">登录</a>
+        <img src="{{avatar}}" alt=""/>
+
+        <!--<img ng-show="loginStatus" src="{{avatar}}" alt=""/>-->
+        <!--<a ng-show="!loginStatus" href="#/">登录</a>-->
       </div>
     </div>
   </div>

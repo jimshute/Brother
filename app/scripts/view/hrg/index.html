@@ -20,14 +20,21 @@
         <input name="options" autocomplete="off" checked type="radio"/>&minus;
       </label>
     </div>
-    <a class="btn btn-warning btn-sm" ng-click="urgeMany()" href="javascript:;">批量催促师兄</a>
+    <a class="kuma-button kuma-button-mwhite" ng-click="urgeMany()" href="javascript:;">批量催促师兄</a>
 
-    <div class="input-group input-group-sm search-box">
-      <input type="text" name="keywords" ng-model="keywords" class="form-control" placeholder="请输入姓名/手机以搜索">
-      <span class="input-group-btn">
-        <button ng-click="search()" class="btn btn-warning" type="button">搜索</button>
+    <div class="search-box">
+      <div class="search-box-input kuma-input">
+        <input type="text" name="keywords" ng-model="keywords" class="" placeholder="请输入姓名/手机以搜索"/>
+      </div><span class="search-box-button">
+        <button ng-click="search()" class="kuma-button kuma-button-mwhite" type="button">搜索</button>
       </span>
     </div>
+    <!--<div class="input-group input-group-sm search-box">-->
+      <!--<input type="text" name="keywords" ng-model="keywords" class="form-control" placeholder="请输入姓名/手机以搜索">-->
+      <!--<span class="input-group-btn">-->
+        <!--<button ng-click="search()" class="btn btn-warning" type="button">搜索</button>-->
+      <!--</span>-->
+    <!--</div>-->
   </div>
   <div id="data-list">
     <table class="kuma-table kuma-table-hover">

@@ -1,66 +1,69 @@
 <div id="campus-body" ng-init="init()">
-    <div id="tool-bar">
-        <a href="#">下载统计模板</a>
-        <a class="btn btn-warning btn-sm" href="#">上传数据</a>
-        <a class="btn btn-warning btn-sm" href="#">导出全部数据</a>
+  <div id="tool-bar">
+    <!--<a class="btn btn-warning btn-sm" href="#">导出全部数据</a>-->
+    <a class="kuma-button kuma-button-mwhite" ng-click="exportAll();" href="javascript:;">导出全部数据</a>
+    <input ng-click="openDialog()" type="button" class="kuma-button kuma-button-mwhite" ng-click="" href="javascript:;" value="上传数据"/>
+    <input onchange="angular.element(this).scope().uploadFile(this)" id="uploadControl" type="file" ng-model="filePath" style="display: none;" />
+    <a href="#/">下载统计模板</a>
 
-        <div class="input-group search-box">
-            <input type="text" name="keywords" ng-model="keywords" class="form-control" placeholder="请输入姓名/手机以搜索">
-              <span class="input-group-btn">
-                <button ng-click="search()" class="btn btn-warning" type="button">搜索</button>
-              </span>
-        </div>
+    <div class="search-box">
+      <div class="search-box-input kuma-input">
+        <input type="text" name="keywords" ng-model="keywords" class="" placeholder="请输入姓名/手机以搜索"/>
+      </div><span class="search-box-button">
+        <button ng-click="search()" class="kuma-button kuma-button-mwhite" type="button">搜索</button>
+      </span>
     </div>
-    <div id="bu-list">
-        <table class="table table-bordered">
-            <thead>
-            <tr>
-                <th rowspan="2">BU</th>
-                <th rowspan="2">offer人数</th>
-                <th rowspan="2">师兄人数</th>
-                <th colspan="3">师兄沟通学生结果</th>
-                <th colspan="3">HR沟通学生结果</th>
-                <th colspan="3">师兄跟进学生结果</th>
-                <th colspan="2">HR跟进师兄结果</th>
-                <th rowspan="2">操作</th>
-            </tr>
-            <tr>
-                <th>确定来</th>
-                <th>确定不来</th>
-                <th>犹豫中</th>
-                <th>确定来</th>
-                <th>确定不来</th>
-                <th>待沟通</th>
-                <th>从未跟进</th>
-                <th>超1周未跟进</th>
-                <th>待沟通</th>
-                <th>已催促师兄</th>
-                <th>待催促师兄</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr ng-repeat="bu in buList">
-                <td>{{bu.bu}}</td>
-                <td>{{bu.offer_number}}</td>
-                <td>{{bu.mentor_com_number}}</td>
-                <td>{{bu.brother_communicate_result.confirm}}</td>
-                <td>{{bu.brother_communicate_result.abandon}}</td>
-                <td>{{bu.brother_communicate_result.hesitate}}</td>
-                <td>{{bu.hr_result.confirm}}</td>
-                <td>{{bu.hr_result.abandon}}</td>
-                <td>{{bu.hr_result.not_communicated}}</td>
-                <td>{{bu.brother_track_result.never}}</td>
-                <td>{{bu.brother_track_result.gt_1w}}</td>
-                <td>{{bu.brother_not_communicated}}</td>
-                <td>{{bu.hr_track_result.urged}}</td>
-                <td>{{bu.hr_track_result.not_urged}}</td>
-                <td><a href="#">下载数据</a></td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-    <nav style="text-align: center">
-        <pager first="1" total="pager.totalPages" max-show-pages="pager.maxShowPages"
-               on-page-changed="onPageChanged"></pager>
-    </nav>
+  </div>
+  <div id="bu-list">
+    <table class="kuma-table table table-bordered">
+      <thead>
+      <tr>
+        <th rowspan="2"><b>BU</b></th>
+        <th rowspan="2"><b>offer人数</b></th>
+        <th rowspan="2"><b>师兄人数</b></th>
+        <th colspan="3"><b>师兄沟通学生结果</b></th>
+        <th colspan="3"><b>HR沟通学生结果</b></th>
+        <th colspan="3"><b>师兄跟进学生结果</b></th>
+        <th colspan="2"><b>HR跟进师兄结果</b></th>
+        <th rowspan="2"><b>操作</b></th>
+      </tr>
+      <tr>
+        <th>确定来</th>
+        <th>确定不来</th>
+        <th>犹豫中</th>
+        <th>确定来</th>
+        <th>确定不来</th>
+        <th>待沟通</th>
+        <th>从未跟进</th>
+        <th>超1周未跟进</th>
+        <th>待沟通</th>
+        <th>已催促师兄</th>
+        <th>待催促师兄</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr ng-repeat="bu in buList">
+        <td>{{bu.bu}}</td>
+        <td>{{bu.offer_number}}</td>
+        <td>{{bu.mentor_com_number}}</td>
+        <td>{{bu.brother_communicate_result.confirm}}</td>
+        <td>{{bu.brother_communicate_result.abandon}}</td>
+        <td>{{bu.brother_communicate_result.hesitate}}</td>
+        <td>{{bu.hr_result.confirm}}</td>
+        <td>{{bu.hr_result.abandon}}</td>
+        <td>{{bu.hr_result.not_communicated}}</td>
+        <td>{{bu.brother_track_result.never}}</td>
+        <td>{{bu.brother_track_result.gt_1w}}</td>
+        <td>{{bu.brother_not_communicated}}</td>
+        <td>{{bu.hr_track_result.urged}}</td>
+        <td>{{bu.hr_track_result.not_urged}}</td>
+        <td><a ng-click="downloadOne(bu.bu);" href="javascript:;">下载数据</a></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  <nav style="text-align: center">
+    <pager first="1" total="pager.totalPages" max-show-pages="pager.maxShowPages"
+           on-page-changed="onPageChanged"></pager>
+  </nav>
 </div>

@@ -2,7 +2,7 @@
  * Created by yeyou.xj on 2014/12/29.
  */
 'use strict';
-angular.module('app.campus').controller('campusController', ['$scope', 'BUList', function($scope, BUList) {
+angular.module('app.campus').controller('campusController', ['$scope', 'BUList', 'BUModel', function($scope, BUList, BUModel) {
   console.log('Hello, Campus');
   $scope.keywords = '';
   $scope.buList = [];
@@ -12,6 +12,7 @@ angular.module('app.campus').controller('campusController', ['$scope', 'BUList',
     pageSize: 10,
     maxShowPages: 5
   };
+  $scope.filePath = undefined;
   $scope.init = function() {
     $scope.loadList(function(data) {
       $scope.buList = data.bu_list;
@@ -65,9 +66,59 @@ angular.module('app.campus').controller('campusController', ['$scope', 'BUList',
 
   $scope.search = function() {
     var options = {
-      keywords: $scope.keywords,
+      keywords: $scope.keywords
     };
     $scope.loadList(options, function(data) {
+      $scope.buList = data.bu_list;
+    });
+  };
+
+  $scope.downloadOne = function(buName) {
+    BUModel.export({
+      buName: buName
+    }, function(data) {
+      if (data.down_link) {
+        location.href=data.down_link;
+      }
+    }, function() {
+
+    });
+  };
+
+  $scope.downloadAll = function() {
+    BUList.export(function(data) {
+      if (data.down_link) {
+        location.href=data.down_link;
+      }
+    }, function() {
+
+    });
+  };
+
+  $scope.openDialog = function() {
+    $('#uploadControl').click();
+    console.log($scope.filePath);
+  };
+
+  $scope.dialog = function() {
+    console.log('the dialog is open');
+    console.log($scope.filePath);
+    console.log($('#uploadControl')[0].files[0]);
+  };
+//
+//  $scope.$watch('filePath', function() {
+//    var file = $('#uploadControl')[0].files[0];
+//    console.log(file);
+//  });
+
+  $scope.uploadFile = function(target) {
+    var file = target.files[0];
+    console.log(file);
+    BUList.upload({}, file, function() {
+      console.log('upload succeed!');
+    });
+    alert('上传成功！');
+    $scope.loadList(function(data) {
       $scope.buList = data.bu_list;
     });
   };

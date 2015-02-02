@@ -19,6 +19,6 @@
    "communicate_result": "0"
   }
  ],
- "student_name": "Steven Williams" //师弟姓名
+ "student_name": "Dorothy Walker" //师弟姓名
 }
 ```

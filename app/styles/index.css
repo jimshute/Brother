@@ -4,7 +4,7 @@ html, body {
 }
 
 body {
-  background: url("../images/bg.jpg") no-repeat;
+  background: url("../images/bg.png") no-repeat;
   background-attachment: fixed;
   background-size: 100% auto;
   margin: 0;
@@ -70,6 +70,10 @@ li {
   /*min-width: 900px;*/
   max-width: 1200px;
   margin: 0 auto;
+}
+
+#body {
+  margin: 5px auto;
 }
 
 #head-body:after {
@@ -157,6 +161,7 @@ li {
 #col-1, #col-2 {
   width: 50%;
   float: left;
+  margin-top: 19px;
 }
 
 #col-1.col-fill-block {
@@ -417,8 +422,42 @@ li {
 }
 
 #tool-bar .search-box {
+  text-align: right;
   float: right;
-  width: 366px;
+  /*width: 366px;*/
+}
+
+#tool-bar a {
+  line-height: 28px;
+}
+
+.search-box-input, .search-box-button {
+  height: 28px;
+  display: inline-block;
+  zoom: 1;
+  vertical-align: middle;
+  padding: 0;
+}
+
+.search-box-input, .search-box-input:hover, .search-box-input:active, .search-box-input:visited {
+  border-right: none;
+  width: 290px;
+}
+
+.search-box-input input {
+  border: none;
+  height: 100%;
+  width: 100%;
+}
+
+/*.search-box-input:before {*/
+  /*font-family: kuma !important;*/
+  /*content: '\e607';*/
+/*}*/
+
+.search-box-button button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 #data-list, #bu-list {
@@ -439,6 +478,14 @@ li {
   position: relative;
   /*text-align: center;*/
   vertical-align: middle;
+}
+
+#bu-list thead th {
+  border-bottom: none;
+}
+
+#bu-list th, #bu-list td {
+  text-align: center;
 }
 
 .checkbox-selector {
@@ -525,10 +572,10 @@ li {
 /* HRG管理--END */
 
 .footer {
-  position: absolute;
-  padding-bottom: 20px;
+  /*position: absolute;*/
+  /*padding-bottom: 20px;*/
   width: 100%;
-  bottom: 0;
+  /*bottom: 0;*/
   text-align: center;
   color: white;
   font-size: 12px;

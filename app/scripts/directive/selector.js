@@ -43,13 +43,13 @@ angular.module('app.directive').directive('selector', ['$timeout', function ($ti
       $scope.hideContent = function() {
         $timeout(function() {
           $scope.dropDown = false;
-        }, 100);
+        }, 200);
       };
 
       $scope.setSelected = function(index) {
         console.log('hello111');
         $scope.selectedIndex = index;
-      }
+      };
     },
     link: function($scope, element, attr) {
       //element.find('.kuma-select-trigger').blur(function() {

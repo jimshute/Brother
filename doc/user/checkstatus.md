@@ -11,7 +11,7 @@
  "status": true,
  "data": {
   "avatar": "http:", //dummyimage.com/200x200
-  "username": "Daniel Lopez"
+  "username": "Angela Rodriguez"
  }
 }
 ```

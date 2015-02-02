@@ -1,0 +1,30 @@
+{
+     "interfaceType": "POST",
+     "requiredParameters": [
+          {
+               "name": "file",
+               "required": true,
+               "remark": "",
+               "nameVerify": "name_1422778389000",
+               "ruleVerify": "rule_1422778389000"
+          }
+     ],
+     "responseParameters": [
+          {
+               "id": "01",
+               "kind": "string",
+               "name": "error",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1422778400000",
+               "ruleVerify": "rule_1422778400000"
+          }
+     ],
+     "reqError": [
+          "请求参数［file］应该为必填项"
+     ],
+     "docError": [],
+     "interfaceUrl": "/campus/upload.json",
+     "interfaceName": "上传数据",
+     "lazyLoad": "no"
+}

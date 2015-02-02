@@ -8,12 +8,12 @@
 {
  "students": [
   {
-   "student_name": "Carol Lee", //师弟姓名
+   "student_name": "Jennifer Williams", //师弟姓名
    "avatar": "http: //dummyimage.com/80x80", //师弟头像
    "phone": "11111111111", //师弟电话
    "email": "xxxxxxx@mock2easy.com", //师弟邮箱
    "track_status": "0", //跟进状态(超时未沟通、从未跟进、正常)
-   "education": "jetscw | zdqgl | pfryl", //教育（学校 | 专业  学位）
+   "education": "rukspydfl | bai | nfsm", //教育（学校 | 专业  学位）
    "track_history": [
     {
      "communicate_date": "2013-02-11", //记录日期
@@ -24,7 +24,7 @@
      "cause": "户口" //原因分类
     }
    ],
-   "student_id": "370000197007151289" //师弟ID
+   "student_id": "320000199007111607" //师弟ID
   }
  ]
 }
